@@ -204,15 +204,44 @@
     document.getElementById('mobile-menu-btn')?.addEventListener('click', function() {
       document.getElementById('mobile-menu').classList.toggle('hidden');
     });
-    // #region agent log
-    (function(){
-      var el = document.getElementById('contact-message');
-      if (el) {
-        var sh = el.scrollHeight, ch = el.clientHeight, ov = getComputedStyle(el).overflowY;
-        fetch('http://127.0.0.1:7245/ingest/7cb3f043-0348-4b95-8eea-9bad9b925c08',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({location:'contact.html:message-box',message:'Message box dimensions',data:{scrollHeight:sh,clientHeight:ch,overflowY:ov},timestamp:Date.now(),sessionId:'debug-session',hypothesisId:'B'})}).catch(function(){});
+    (function() {
+      var form = document.getElementById('contact-form');
+      var successMsg = document.getElementById('contact-success-msg');
+      var formAction = 'https://docs.google.com/forms/d/e/REPLACE_WITH_YOUR_CONTACT_FORM_ID/formResponse';
+      var entryIds = { name: 'entry.1000000001', email: 'entry.1000000002', phone: 'entry.1000000003', subject: 'entry.1000000004', message: 'entry.1000000005' };
+      if (form) {
+        form.addEventListener('submit', function(e) {
+          e.preventDefault();
+          var f = document.createElement('form');
+          f.method = 'POST';
+          f.action = formAction;
+          f.target = 'contact-form-iframe';
+          f.style.display = 'none';
+          var fields = [
+            { id: 'contact-name', key: 'name' },
+            { id: 'contact-email', key: 'email' },
+            { id: 'contact-phone', key: 'phone' },
+            { id: 'contact-subject', key: 'subject' },
+            { id: 'contact-message', key: 'message' }
+          ];
+          fields.forEach(function(field) {
+            var el = document.getElementById(field.id);
+            if (el && el.value) {
+              var input = document.createElement('input');
+              input.type = 'hidden';
+              input.name = entryIds[field.key];
+              input.value = el.value;
+              f.appendChild(input);
+            }
+          });
+          document.body.appendChild(f);
+          f.submit();
+          document.body.removeChild(f);
+          form.reset();
+          if (successMsg) { successMsg.classList.remove('hidden'); setTimeout(function() { successMsg.classList.add('hidden'); }, 6000); }
+        });
       }
     })();
-    // #endregion
   </script>
 </body>
 </html>

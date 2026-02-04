@@ -518,15 +518,28 @@
     (function() {
       var form = document.getElementById('newsletter-form');
       var successMsg = document.getElementById('newsletter-success-msg');
-      var formViewUrl = 'https://docs.google.com/forms/d/e/1FAIpQLSf-oVUxkp7Wx_ro_PA84slt-ky1kO8fNzcmyn0YLXuttl1TwA/viewform?usp=publish-editor';
+      var formAction = 'https://docs.google.com/forms/d/e/1FAIpQLSf-oVUxkp7Wx_ro_PA84slt-ky1kO8fNzcmyn0YLXuttl1TwA/formResponse';
+      var emailEntryId = 'entry.1234567890';
       if (form) {
         form.addEventListener('submit', function(e) {
           e.preventDefault();
           var emailEl = document.getElementById('newsletter-email');
           if (!emailEl || !emailEl.value.trim()) return;
-          window.open(formViewUrl, '_blank', 'noopener,noreferrer');
+          var f = document.createElement('form');
+          f.method = 'POST';
+          f.action = formAction;
+          f.target = 'newsletter-form-iframe';
+          f.style.display = 'none';
+          var input = document.createElement('input');
+          input.type = 'hidden';
+          input.name = emailEntryId;
+          input.value = emailEl.value.trim();
+          f.appendChild(input);
+          document.body.appendChild(f);
+          f.submit();
+          document.body.removeChild(f);
           form.reset();
-          if (successMsg) { successMsg.classList.remove('hidden'); successMsg.textContent = 'Opening signup form in a new tab. Complete it there to subscribe.'; setTimeout(function() { successMsg.classList.add('hidden'); successMsg.textContent = 'Thanks for subscribing!'; }, 6000); }
+          if (successMsg) { successMsg.classList.remove('hidden'); successMsg.textContent = 'Thanks for subscribing!'; setTimeout(function() { successMsg.classList.add('hidden'); }, 5000); }
         });
       }
     })();
