@@ -2,6 +2,22 @@
 
 Your site forms (Newsletter, Contact, Donation, Get Involved) submit **directly to Google Forms in the background** (no redirect). For Google to receive what users type or select, each field must use the **correct entry ID** from your Google Form.
 
+---
+
+## Newsletter – get Email entry ID in 30 seconds (easiest)
+
+1. Open your **Newsletter** Google Form in **edit mode** (forms.google.com → open the form).
+2. Click the **three dots (⋮)** in the top right.
+3. Click **"Get pre-filled link"**.
+4. In the **Email** question, type anything (e.g. `test`).
+5. Click **"Get link"**.
+6. Copy the full URL. It will look like:  
+   `https://docs.google.com/forms/d/e/1FAIpQLSf.../viewform?usp=pp_url&entry.XXXXXXXXXX=test`  
+   The part **`entry.XXXXXXXXXX`** (with numbers) is your Email field's entry ID.
+7. **Paste that full URL or just the `entry.XXXXXXXXXX` value** into the chat so we can update `index.html` with it. Once that's in the code, the Newsletter form will send the email to Google correctly.
+
+---
+
 ## How to get entry IDs (for any form)
 
 1. **Open your Google Form** in a browser (the normal “view” or “preview” link, e.g. `.../viewform`).
