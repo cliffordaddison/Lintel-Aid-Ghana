@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Programs &amp; SDGs | Lintel Aid Ghana</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet"/>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: "#E85D04",
+            charcoal: "#1A1A1A",
+            beige: "#FAF7F2",
+            teal: "#0D9488",
+            "grey-card": "#F1F5F9",
+          },
+          fontFamily: { heading: ["Poppins", "sans-serif"], body: ["Open Sans", "sans-serif"] },
+        },
+      },
+    };
+  </script>
+  <style>
+    body { font-family: 'Open Sans', sans-serif; }
+    h1, h2, h3, h4, .font-heading { font-family: 'Poppins', sans-serif; }
+    .glass-nav { backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); }
+  </style>
+</head>
+<body class="bg-beige text-charcoal font-body antialiased">
+  <nav class="fixed top-0 w-full z-50 glass-nav border-b border-slate-200/50 bg-white/90">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-20">
+        <a href="index.html" class="flex items-center gap-3">
+          <img alt="Lintel Aid Ghana Logo" class="h-12 w-12 object-contain rounded-full" src="images/image.png"/>
+          <span class="hidden md:block font-heading text-xl font-extrabold tracking-tight text-charcoal">LINTEL AID <span class="text-primary">GHANA</span></span>
+        </a>
+        <div class="hidden lg:flex items-center gap-8 font-medium text-charcoal">
+          <a class="hover:text-primary transition-colors" href="index.html">Home</a>
+          <a class="hover:text-primary transition-colors" href="about.html">About</a>
+          <a class="text-primary font-semibold" href="programs.html">Programs</a>
+          <a class="hover:text-primary transition-colors" href="impact.html">Impact &amp; Stories</a>
+          <a class="hover:text-primary transition-colors" href="media.html">Media</a>
+          <a class="hover:text-primary transition-colors" href="get-involved.html">Get Involved</a>
+          <a class="bg-primary hover:bg-orange-600 text-white px-6 py-2.5 rounded-full font-semibold transition-all shadow-lg shadow-primary/25" href="donate.html">Donate</a>
+          <a class="hover:text-primary transition-colors" href="contact.html">Contact</a>
+        </div>
+        <button id="mobile-menu-btn" class="lg:hidden p-2 rounded-md text-charcoal" aria-label="Menu"><span class="material-icons-outlined">menu</span></button>
+      </div>
+    </div>
+    <div id="mobile-menu" class="hidden lg:hidden border-t border-slate-200 bg-white px-4 py-4 space-y-2">
+      <a class="block py-2 hover:text-primary" href="index.html">Home</a>
+      <a class="block py-2 hover:text-primary" href="about.html">About</a>
+      <a class="block py-2 text-primary font-semibold" href="programs.html">Programs</a>
+      <a class="block py-2 hover:text-primary" href="impact.html">Impact &amp; Stories</a>
+      <a class="block py-2 hover:text-primary" href="media.html">Media</a>
+      <a class="block py-2 hover:text-primary" href="get-involved.html">Get Involved</a>
+      <a class="block py-2 text-primary font-semibold" href="donate.html">Donate</a>
+      <a class="block py-2 hover:text-primary" href="contact.html">Contact</a>
+    </div>
+  </nav>
+
+  <main class="pt-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+      <nav class="text-sm text-slate-500">
+        <a class="hover:text-primary" href="index.html">Home</a>
+        <span class="mx-2">/</span>
+        <span class="text-charcoal font-medium">Programs</span>
+      </nav>
+    </div>
+
+    <header class="py-16 lg:py-24 relative border-y border-slate-100 overflow-hidden">
+      <div class="absolute inset-0 z-0">
+        <img alt="Our Programs & SDG Focus" class="w-full h-full object-cover" src="images/WhatsApp Image 2026-02-04 at 3.14.49 PM (8).jpeg"/>
+        <div class="absolute inset-0 bg-charcoal/70"></div>
+      </div>
+      <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white">
+        <h1 class="font-heading text-4xl md:text-5xl font-extrabold mb-6">Our Programs &amp; SDG Focus</h1>
+        <p class="max-w-3xl mx-auto text-lg text-white/95 leading-relaxed mb-10">
+          Empowering children, women, and communities across Ghana through strategic initiatives aligned with the United Nations Sustainable Development Goals.
+        </p>
+        <div class="flex flex-wrap justify-center gap-4">
+          <a class="px-6 py-3 rounded-full font-semibold bg-white/20 text-white hover:bg-white/30 transition-colors border border-white/30" href="#sdg4">SDG 4 – Education</a>
+          <a class="px-6 py-3 rounded-full font-semibold bg-white/20 text-white hover:bg-white/30 transition-colors border border-white/30" href="#sdg1">SDG 1 – Poverty</a>
+          <a class="px-6 py-3 rounded-full font-semibold bg-white/20 text-white hover:bg-white/30 transition-colors border border-white/30" href="#sdg8">SDG 8 – Decent Work</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Upcoming: Perseverance School -->
+    <section class="py-16 bg-white border-y border-slate-100">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="bg-primary/5 border-2 border-primary/30 rounded-2xl p-6 md:p-8 flex flex-col md:flex-row gap-6 items-start">
+          <span class="inline-flex items-center px-4 py-1.5 rounded-full text-sm font-bold uppercase tracking-wider bg-primary text-white shrink-0">Upcoming Project</span>
+          <div class="flex-1">
+            <h2 class="font-heading text-2xl font-bold text-charcoal mb-2">Perseverance School – April 2026</h2>
+            <p class="text-slate-600 mb-4">Amanase, Yilo Krobo, Eastern Region</p>
+            <a class="inline-flex items-center gap-2 text-primary font-bold hover:underline" href="https://youtu.be/R7liqgRHPhw" target="_blank" rel="noopener">Watch on YouTube <span class="material-icons-outlined text-lg">play_circle</span></a>
+          </div>
+          <div class="aspect-video w-full md:w-72 rounded-xl overflow-hidden shrink-0">
+            <iframe class="w-full h-full" src="https://www.youtube.com/embed/R7liqgRHPhw" title="Perseverance School – April 2026" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SDG 4 – Quality Education -->
+    <section id="sdg4" class="py-24 bg-grey-card scroll-mt-24">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center gap-4 mb-12">
+          <div class="w-16 h-16 bg-teal rounded-xl flex items-center justify-center text-white font-heading font-bold text-2xl">4</div>
+          <div>
+            <h2 class="font-heading text-3xl font-bold text-charcoal">Quality Education (SDG 4)</h2>
+            <p class="text-slate-600">Ensuring inclusive and equitable quality education for all.</p>
+          </div>
+        </div>
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div class="bg-white rounded-2xl overflow-hidden border border-slate-100 shadow-sm hover:shadow-lg transition-shadow">
+            <div class="h-40 bg-teal/20 flex items-center justify-center"><span class="material-icons-outlined text-teal text-5xl">school</span></div>
+            <div class="p-6">
+              <h3 class="font-heading text-xl font-bold text-charcoal mb-3">Scholarships for Needy but Brilliant Students</h3>
+              <ul class="text-slate-600 text-sm space-y-2 mb-4">
+                <li>• Financial support for basic and secondary education</li>
+                <li>• Mentorship and academic follow-up</li>
+                <li>• Sample beneficiary stories on Impact page</li>
+              </ul>
+              <p class="text-primary font-bold mb-4">120+ Scholarships Awarded</p>
+              <a class="inline-flex items-center gap-1 text-primary font-semibold hover:underline" href="impact.html">View Stories</a>
+            </div>
+          </div>
+          <div class="bg-white rounded-2xl overflow-hidden border border-slate-100 shadow-sm hover:shadow-lg transition-shadow">
+            <div class="h-40 bg-teal/20 flex items-center justify-center"><span class="material-icons-outlined text-teal text-5xl">menu_book</span></div>
+            <div class="p-6">
+              <h3 class="font-heading text-xl font-bold text-charcoal mb-3">Support to Underprivileged Schools</h3>
+              <ul class="text-slate-600 text-sm space-y-2 mb-4">
+                <li>• School supplies drives</li>
+                <li>• Infrastructure support</li>
+                <li>• Mentorship visits</li>
+              </ul>
+              <p class="text-primary font-bold mb-4">50+ Schools Supported</p>
+              <a class="inline-flex items-center gap-1 text-primary font-semibold hover:underline" href="donate.html">Support This Programme</a>
+            </div>
+          </div>
+          <div class="bg-white rounded-2xl overflow-hidden border border-slate-100 shadow-sm hover:shadow-lg transition-shadow">
+            <div class="h-40 bg-teal/20 flex items-center justify-center"><span class="material-icons-outlined text-teal text-5xl">face</span></div>
+            <div class="p-6">
+              <h3 class="font-heading text-xl font-bold text-charcoal mb-3">Promoting Girl-Child Education</h3>
+              <ul class="text-slate-600 text-sm space-y-2 mb-4">
+                <li>• Campaigns and outreach in rural communities</li>
+                <li>• Advocacy stories</li>
+                <li>• Gender-balanced focus</li>
+              </ul>
+              <p class="text-primary font-bold mb-4">500+ Girls Reached</p>
+              <a class="inline-flex items-center gap-1 text-primary font-semibold hover:underline" href="impact.html">View Stories</a>
+            </div>
+          </div>
+          <div class="bg-white rounded-2xl overflow-hidden border border-slate-100 shadow-sm hover:shadow-lg transition-shadow">
+            <div class="h-40 bg-teal/20 flex items-center justify-center"><span class="material-icons-outlined text-teal text-5xl">groups</span></div>
+            <div class="p-6">
+              <h3 class="font-heading text-xl font-bold text-charcoal mb-3">Lintel Clubs in JHS/SHS</h3>
+              <ul class="text-slate-600 text-sm space-y-2 mb-4">
+                <li>• Clubs structure and mentorship themes</li>
+                <li>• Leadership training</li>
+                <li>• Gender-balanced focus (boys and girls)</li>
+              </ul>
+              <p class="text-primary font-bold mb-4">500+ Students in Clubs</p>
+              <a class="inline-flex items-center gap-1 text-primary font-semibold hover:underline" href="donate.html">Support This Programme</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SDG 1 – Eradicating Extreme Poverty -->
+    <section id="sdg1" class="py-24 bg-white scroll-mt-24">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center gap-4 mb-12">
+          <div class="w-16 h-16 bg-red-600 rounded-xl flex items-center justify-center text-white font-heading font-bold text-2xl">1</div>
+          <div>
+            <h2 class="font-heading text-3xl font-bold text-charcoal">Eradicating Extreme Poverty (SDG 1)</h2>
+            <p class="text-slate-600">End poverty in all its forms everywhere in our communities.</p>
+          </div>
+        </div>
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div class="bg-grey-card rounded-2xl overflow-hidden border border-slate-100 shadow-sm hover:shadow-lg transition-shadow">
+            <div class="h-40 bg-red-100 flex items-center justify-center"><span class="material-icons-outlined text-red-600 text-5xl">volunteer_activism</span></div>
+            <div class="p-6">
+              <h3 class="font-heading text-xl font-bold text-charcoal mb-3">Support for Needy and Less Privileged Families</h3>
+              <ul class="text-slate-600 text-sm space-y-2 mb-4">
+                <li>• Food relief and clothing</li>
+                <li>• Emergency support</li>
+                <li>• Case-based interventions</li>
+              </ul>
+              <p class="text-primary font-bold mb-4">2,000+ Families Reached</p>
+              <a class="inline-flex items-center gap-1 text-primary font-semibold hover:underline" href="donate.html">Support This Programme</a>
+            </div>
+          </div>
+          <div class="bg-grey-card rounded-2xl overflow-hidden border border-slate-100 shadow-sm hover:shadow-lg transition-shadow">
+            <div class="h-40 bg-red-100 flex items-center justify-center"><span class="material-icons-outlined text-red-600 text-5xl">child_care</span></div>
+            <div class="p-6">
+              <h3 class="font-heading text-xl font-bold text-charcoal mb-3">Annual Support to Orphanages</h3>
+              <ul class="text-slate-600 text-sm space-y-2 mb-4">
+                <li>• Visits and donations</li>
+                <li>• Mentorship activities</li>
+                <li>• Sustainable support</li>
+              </ul>
+              <p class="text-primary font-bold mb-4">10+ Orphanages Partnered</p>
+              <a class="inline-flex items-center gap-1 text-primary font-semibold hover:underline" href="donate.html">Support This Programme</a>
+            </div>
+          </div>
+          <div class="bg-grey-card rounded-2xl overflow-hidden border border-slate-100 shadow-sm hover:shadow-lg transition-shadow">
+            <div class="h-40 bg-red-100 flex items-center justify-center"><span class="material-icons-outlined text-red-600 text-5xl">directions_walk</span></div>
+            <div class="p-6">
+              <h3 class="font-heading text-xl font-bold text-charcoal mb-3">Sustainable Livelihood for Street Children</h3>
+              <ul class="text-slate-600 text-sm space-y-2 mb-4">
+                <li>• Skills training</li>
+                <li>• Mentorship and reintegration</li>
+                <li>• Long-term support</li>
+              </ul>
+              <p class="text-primary font-bold mb-4">500+ Children Supported</p>
+              <a class="inline-flex items-center gap-1 text-primary font-semibold hover:underline" href="impact.html">View Stories</a>
+            </div>
+          </div>
+          <div class="bg-grey-card rounded-2xl overflow-hidden border border-slate-100 shadow-sm hover:shadow-lg transition-shadow">
+            <div class="h-40 bg-red-100 flex items-center justify-center"><span class="material-icons-outlined text-red-600 text-5xl">handshake</span></div>
+            <div class="p-6">
+              <h3 class="font-heading text-xl font-bold text-charcoal mb-3">Support for Underprivileged Individuals &amp; Families</h3>
+              <ul class="text-slate-600 text-sm space-y-2 mb-4">
+                <li>• Case-based interventions</li>
+                <li>• Relief and empowerment</li>
+              </ul>
+              <p class="text-primary font-bold mb-4">Ongoing</p>
+              <a class="inline-flex items-center gap-1 text-primary font-semibold hover:underline" href="donate.html">Support This Programme</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SDG 8 – Decent Work & Economic Growth -->
+    <section id="sdg8" class="py-24 bg-grey-card scroll-mt-24">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center gap-4 mb-12">
+          <div class="w-16 h-16 bg-amber-600 rounded-xl flex items-center justify-center text-white font-heading font-bold text-2xl">8</div>
+          <div>
+            <h2 class="font-heading text-3xl font-bold text-charcoal">Decent Work &amp; Economic Growth (SDG 8)</h2>
+            <p class="text-slate-600">Promoting sustained, inclusive economic growth and productive employment.</p>
+          </div>
+        </div>
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div class="bg-white rounded-2xl overflow-hidden border border-slate-100 shadow-sm hover:shadow-lg transition-shadow">
+            <div class="h-40 bg-amber-100 flex items-center justify-center"><span class="material-icons-outlined text-amber-700 text-5xl">work_outline</span></div>
+            <div class="p-6">
+              <h3 class="font-heading text-xl font-bold text-charcoal mb-3">Decent Work &amp; Economic Empowerment</h3>
+              <p class="text-slate-600 text-sm mb-4">Overall framework for vocational training, financial literacy, and micro-credit.</p>
+              <a class="inline-flex items-center gap-1 text-primary font-semibold hover:underline" href="donate.html">Support This Programme</a>
+            </div>
+          </div>
+          <div class="bg-white rounded-2xl overflow-hidden border border-slate-100 shadow-sm hover:shadow-lg transition-shadow">
+            <div class="h-40 bg-amber-100 flex items-center justify-center"><span class="material-icons-outlined text-amber-700 text-5xl">content_cut</span></div>
+            <div class="p-6">
+              <h3 class="font-heading text-xl font-bold text-charcoal mb-3">Vocational Training for Women</h3>
+              <ul class="text-slate-600 text-sm space-y-2 mb-4">
+                <li>• Hairdressing, tailoring, crafts</li>
+                <li>• Digital marketing and similar trades</li>
+              </ul>
+              <p class="text-primary font-bold mb-4">300+ Women Trained</p>
+              <a class="inline-flex items-center gap-1 text-primary font-semibold hover:underline" href="impact.html">View Stories</a>
+            </div>
+          </div>
+          <div class="bg-white rounded-2xl overflow-hidden border border-slate-100 shadow-sm hover:shadow-lg transition-shadow">
+            <div class="h-40 bg-amber-100 flex items-center justify-center"><span class="material-icons-outlined text-amber-700 text-5xl">savings</span></div>
+            <div class="p-6">
+              <h3 class="font-heading text-xl font-bold text-charcoal mb-3">Financial Trainings for Women Groups</h3>
+              <ul class="text-slate-600 text-sm space-y-2 mb-4">
+                <li>• Financial literacy</li>
+                <li>• Savings culture</li>
+                <li>• Basic entrepreneurship</li>
+              </ul>
+              <p class="text-primary font-bold mb-4">200+ Women Trained</p>
+              <a class="inline-flex items-center gap-1 text-primary font-semibold hover:underline" href="donate.html">Support This Programme</a>
+            </div>
+          </div>
+          <div class="bg-white rounded-2xl overflow-hidden border border-slate-100 shadow-sm hover:shadow-lg transition-shadow">
+            <div class="h-40 bg-amber-100 flex items-center justify-center"><span class="material-icons-outlined text-amber-700 text-5xl">business_center</span></div>
+            <div class="p-6">
+              <h3 class="font-heading text-xl font-bold text-charcoal mb-3">Micro-credit for Empowered Women Groups</h3>
+              <ul class="text-slate-600 text-sm space-y-2 mb-4">
+                <li>• Small loans and repayment model</li>
+                <li>• Success stories</li>
+              </ul>
+              <p class="text-primary font-bold mb-4">85% Employment Rate</p>
+              <a class="inline-flex items-center gap-1 text-primary font-semibold hover:underline" href="impact.html">View Stories</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-16 bg-charcoal text-white">
+      <div class="max-w-4xl mx-auto px-4 text-center">
+        <h2 class="font-heading text-2xl md:text-3xl font-bold mb-6">Support Our Programmes</h2>
+        <p class="text-slate-300 mb-8">Your contribution directly funds education, poverty alleviation, and women empowerment across Ghana.</p>
+        <a class="inline-flex items-center gap-2 bg-primary text-white px-8 py-4 rounded-full font-bold hover:bg-orange-600 transition-colors" href="donate.html">Donate Now</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-charcoal text-slate-300 pt-16 pb-8 border-t border-slate-700">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col md:flex-row justify-between items-center gap-8">
+        <div class="flex items-center gap-3">
+          <a href="index.html"><img alt="Lintel Aid Ghana Logo" class="h-10 w-10 object-contain rounded-full" src="images/image_1.png"/></a>
+          <span class="font-heading font-bold text-white">LINTEL AID <span class="text-primary">GHANA</span></span>
+        </div>
+        <div class="flex flex-wrap items-center gap-8">
+          <span class="flex items-center gap-2 text-slate-400"><span class="material-icons-outlined text-sm">phone</span> 0549811336</span>
+          <a class="hover:text-primary transition-colors" href="index.html">Home</a>
+          <a class="hover:text-primary transition-colors" href="about.html">About</a>
+          <a class="hover:text-primary transition-colors" href="programs.html">Programs</a>
+          <a class="hover:text-primary transition-colors" href="impact.html">Impact</a>
+          <a class="hover:text-primary transition-colors" href="media.html">Media</a>
+          <a class="hover:text-primary transition-colors" href="get-involved.html">Get Involved</a>
+          <a class="hover:text-primary transition-colors" href="donate.html">Donate</a>
+          <a class="hover:text-primary transition-colors" href="contact.html">Contact</a>
+        </div>
+      </div>
+      <div class="pt-8 mt-8 border-t border-slate-700 text-center text-sm text-slate-500">
+        <p>© 2026 Lintel Aid Ghana. All Rights Reserved. "Creating Hope, Impacting Lives"</p>
+      </div>
+    </div>
+  </footer>
+
+  <a href="donate.html" class="fixed bottom-6 right-6 z-40 lg:hidden bg-primary text-white px-6 py-4 rounded-full font-bold shadow-xl hover:bg-orange-600 transition-colors flex items-center gap-2">
+    <span class="material-icons-outlined">volunteer_activism</span> Donate
+  </a>
+
+  <script>
+    document.getElementById('mobile-menu-btn')?.addEventListener('click', function() {
+      document.getElementById('mobile-menu').classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>

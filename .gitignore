@@ -1,0 +1,28 @@
+# Exclude Pages folder and tooling
+Pages/
+node_modules/
+.cursor/
+*.log
+package.json
+package-lock.json
+vite.config.js
+
+# Ignore all images then allow only the ones used by the site
+images/*
+!images/image.png
+!images/image_1.png
+!images/WhatsApp Image 2026-02-04 at 3.02.03 PM (1).jpeg
+!images/WhatsApp Image 2026-02-04 at 3.02.03 PM.jpeg
+!images/WhatsApp Image 2026-02-04 at 3.02.21 PM.jpeg
+!images/WhatsApp Image 2026-02-04 at 3.02.22 PM.jpeg
+!images/WhatsApp Image 2026-02-04 at 3.14.47 PM.jpeg
+!images/WhatsApp Image 2026-02-04 at 3.14.48 PM (1).jpeg
+!images/WhatsApp Image 2026-02-04 at 3.14.48 PM (2).jpeg
+!images/WhatsApp Image 2026-02-04 at 3.14.48 PM (4).jpeg
+!images/WhatsApp Image 2026-02-04 at 3.14.48 PM (5).jpeg
+!images/WhatsApp Image 2026-02-04 at 3.14.48 PM (7).jpeg
+!images/WhatsApp Image 2026-02-04 at 3.14.48 PM (8).jpeg
+!images/WhatsApp Image 2026-02-04 at 3.14.49 PM (4).jpeg
+!images/WhatsApp Image 2026-02-04 at 3.14.49 PM (8).jpeg
+!images/WhatsApp Image 2026-02-04 at 3.18.25 PM.jpeg
+!images/WhatsApp Image 2026-02-04 at 3.18.30 PM.jpeg

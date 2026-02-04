@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Lintel Aid Ghana | Creating Hope, Impacting Lives</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet"/>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: "#E85D04",
+            charcoal: "#1A1A1A",
+            beige: "#FAF7F2",
+            teal: "#0D9488",
+            "grey-card": "#F1F5F9",
+          },
+          fontFamily: {
+            heading: ["Poppins", "sans-serif"],
+            body: ["Open Sans", "sans-serif"],
+          },
+        },
+      },
+    };
+  </script>
+  <style>
+    body { font-family: 'Open Sans', sans-serif; }
+    h1, h2, h3, h4, .font-heading { font-family: 'Poppins', sans-serif; }
+    .hero-gradient { background: linear-gradient(to right, rgba(26,26,26,0.85) 0%, rgba(26,26,26,0.4) 60%, transparent 100%); }
+    .glass-nav { backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); }
+  </style>
+</head>
+<body class="bg-beige text-charcoal font-body antialiased">
+  <!-- Sticky Nav -->
+  <nav class="fixed top-0 w-full z-50 glass-nav border-b border-slate-200/50 bg-white/90">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-20">
+        <a href="index.html" class="flex items-center gap-3">
+          <img alt="Lintel Aid Ghana Logo" class="h-12 w-12 object-contain rounded-full" src="Pages/image.png"/>
+          <span class="hidden md:block font-heading text-xl font-extrabold tracking-tight text-charcoal">LINTEL AID <span class="text-primary">GHANA</span></span>
+        </a>
+        <div class="hidden lg:flex items-center gap-8 font-medium text-charcoal">
+          <a class="hover:text-primary transition-colors" href="index.html">Home</a>
+          <a class="hover:text-primary transition-colors" href="about.html">About</a>
+          <a class="hover:text-primary transition-colors" href="programs.html">Programs</a>
+          <a class="hover:text-primary transition-colors" href="impact.html">Impact &amp; Stories</a>
+          <a class="hover:text-primary transition-colors" href="media.html">Media</a>
+          <a class="hover:text-primary transition-colors" href="get-involved.html">Get Involved</a>
+          <a class="bg-primary hover:bg-orange-600 text-white px-6 py-2.5 rounded-full font-semibold transition-all shadow-lg shadow-primary/25" href="donate.html">Donate</a>
+          <a class="hover:text-primary transition-colors" href="contact.html">Contact</a>
+        </div>
+        <button id="mobile-menu-btn" class="lg:hidden p-2 rounded-md text-charcoal" aria-label="Menu">
+          <span class="material-icons-outlined">menu</span>
+        </button>
+      </div>
+    </div>
+    <div id="mobile-menu" class="hidden lg:hidden border-t border-slate-200 bg-white px-4 py-4 space-y-2">
+      <a class="block py-2 hover:text-primary" href="index.html">Home</a>
+      <a class="block py-2 hover:text-primary" href="about.html">About</a>
+      <a class="block py-2 hover:text-primary" href="programs.html">Programs</a>
+      <a class="block py-2 hover:text-primary" href="impact.html">Impact &amp; Stories</a>
+      <a class="block py-2 hover:text-primary" href="media.html">Media</a>
+      <a class="block py-2 hover:text-primary" href="get-involved.html">Get Involved</a>
+      <a class="block py-2 text-primary font-semibold" href="donate.html">Donate</a>
+      <a class="block py-2 hover:text-primary" href="contact.html">Contact</a>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header class="relative pt-20 min-h-[90vh] flex items-center overflow-hidden">
+    <div class="absolute inset-0 z-0">
+      <img alt="Creating and impacting hope in Ghanaian communities" class="w-full h-full object-cover" src="images/WhatsApp Image 2026-02-04 at 3.14.49 PM (4).jpeg"/>
+      <div class="absolute inset-0 hero-gradient"></div>
+    </div>
+    <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+      <div class="grid lg:grid-cols-2 gap-12 items-center">
+        <div>
+          <h1 class="font-heading text-4xl md:text-5xl lg:text-6xl font-extrabold text-white mb-6 leading-tight">
+            Creating &amp; Impacting Hope in Ghanaian Communities.
+          </h1>
+          <p class="text-xl text-slate-200 mb-8 max-w-xl leading-relaxed">
+            Empowering children, women, and underprivileged communities through education, economic opportunities, and compassionate support.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4">
+            <a class="inline-flex justify-center items-center px-8 py-4 bg-primary text-white rounded-full font-bold text-lg hover:bg-orange-600 transition-all shadow-xl" href="donate.html">Donate Now</a>
+            <a class="inline-flex justify-center items-center px-8 py-4 bg-white/10 text-white border-2 border-white/30 rounded-full font-bold text-lg hover:bg-white/20 transition-all" href="impact.html">See Our Impact</a>
+          </div>
+        </div>
+        <div class="hidden lg:block">
+          <div class="bg-white/95 rounded-2xl shadow-2xl p-8 space-y-6 max-w-sm">
+            <h3 class="font-heading text-lg font-bold text-charcoal">Our Impact</h3>
+            <div class="space-y-4">
+              <div class="flex items-center gap-4">
+                <span class="text-3xl font-heading font-extrabold text-primary">5,000+</span>
+                <span class="text-slate-600">students supported with scholarships</span>
+              </div>
+              <div class="flex items-center gap-4">
+                <span class="text-3xl font-heading font-extrabold text-primary">2,000+</span>
+                <span class="text-slate-600">women trained and empowered</span>
+              </div>
+              <div class="flex items-center gap-4">
+                <span class="text-3xl font-heading font-extrabold text-primary">45+</span>
+                <span class="text-slate-600">communities reached</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Vision, Mission & Focus Strip -->
+  <section class="py-16 bg-white border-y border-slate-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid md:grid-cols-3 gap-10">
+        <div class="text-center md:text-left">
+          <div class="w-14 h-14 rounded-full bg-primary/10 flex items-center justify-center mx-auto md:mx-0 mb-4">
+            <span class="material-icons-outlined text-primary text-3xl">visibility</span>
+          </div>
+          <h3 class="font-heading text-xl font-bold text-charcoal mb-2">Vision</h3>
+          <p class="text-slate-600">An impactful world through partnership and collaboration.</p>
+        </div>
+        <div class="text-center md:text-left">
+          <div class="w-14 h-14 rounded-full bg-primary/10 flex items-center justify-center mx-auto md:mx-0 mb-4">
+            <span class="material-icons-outlined text-primary text-3xl">track_changes</span>
+          </div>
+          <h3 class="font-heading text-xl font-bold text-charcoal mb-2">Mission</h3>
+          <p class="text-slate-600">Creating a positive impact and nurturing lives through empowering, educating and supporting the less privileged.</p>
+        </div>
+        <div class="text-center md:text-left">
+          <div class="w-14 h-14 rounded-full bg-teal/10 flex items-center justify-center mx-auto md:mx-0 mb-4">
+            <span class="material-icons-outlined text-teal text-3xl">public</span>
+          </div>
+          <h3 class="font-heading text-xl font-bold text-charcoal mb-2">Areas of Focus</h3>
+          <p class="text-slate-600 mb-4">SDG 4 · SDG 1 · SDG 8</p>
+          <a class="text-primary font-semibold hover:underline" href="programs.html">Learn More</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Programs -->
+  <section class="py-24 bg-grey-card" id="programs">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <h2 class="font-heading text-3xl md:text-4xl font-extrabold text-charcoal mb-4">Featured Programs</h2>
+        <p class="text-slate-600">Aligned with UN Sustainable Development Goals to create measurable, lasting impact across Ghana.</p>
+      </div>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-white rounded-2xl overflow-hidden border border-slate-100 shadow-sm hover:shadow-xl transition-shadow">
+          <div class="h-48 bg-teal/20 flex items-center justify-center">
+            <span class="material-icons-outlined text-teal text-6xl">menu_book</span>
+          </div>
+          <div class="p-8">
+            <span class="text-xs font-bold uppercase tracking-wider text-teal">SDG 4</span>
+            <h3 class="font-heading text-2xl font-bold text-charcoal mt-2 mb-4">Quality Education</h3>
+            <p class="text-slate-600 mb-6">Scholarships for needy but brilliant students, support for underprivileged schools, girl-child education, Lintel Clubs in JHS/SHS.</p>
+            <a class="text-primary font-semibold inline-flex items-center gap-1 hover:gap-2 transition-all" href="programs.html#sdg4">View Programme <span class="material-icons-outlined text-lg">arrow_forward</span></a>
+          </div>
+        </div>
+        <div class="bg-white rounded-2xl overflow-hidden border border-slate-100 shadow-sm hover:shadow-xl transition-shadow">
+          <div class="h-48 bg-red-100 flex items-center justify-center">
+            <span class="material-icons-outlined text-red-600 text-6xl">volunteer_activism</span>
+          </div>
+          <div class="p-8">
+            <span class="text-xs font-bold uppercase tracking-wider text-red-600">SDG 1</span>
+            <h3 class="font-heading text-2xl font-bold text-charcoal mt-2 mb-4">Poverty Eradication</h3>
+            <p class="text-slate-600 mb-6">Support for needy families, annual orphanage support, sustainable livelihood for street children, relief for underprivileged individuals.</p>
+            <a class="text-primary font-semibold inline-flex items-center gap-1 hover:gap-2 transition-all" href="programs.html#sdg1">View Programme <span class="material-icons-outlined text-lg">arrow_forward</span></a>
+          </div>
+        </div>
+        <div class="bg-white rounded-2xl overflow-hidden border border-slate-100 shadow-sm hover:shadow-xl transition-shadow">
+          <div class="h-48 bg-amber-100 flex items-center justify-center">
+            <span class="material-icons-outlined text-amber-700 text-6xl">work_outline</span>
+          </div>
+          <div class="p-8">
+            <span class="text-xs font-bold uppercase tracking-wider text-amber-700">SDG 8</span>
+            <h3 class="font-heading text-2xl font-bold text-charcoal mt-2 mb-4">Decent Work &amp; Economic Growth</h3>
+            <p class="text-slate-600 mb-6">Vocational training for women, financial literacy, micro-credit for empowered women groups to sustain businesses.</p>
+            <a class="text-primary font-semibold inline-flex items-center gap-1 hover:gap-2 transition-all" href="programs.html#sdg8">View Programme <span class="material-icons-outlined text-lg">arrow_forward</span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Impact Story – Isaac Clottey -->
+  <section class="py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-2 gap-0 rounded-3xl overflow-hidden bg-grey-card border border-slate-100 shadow-xl">
+        <div class="p-12 lg:p-16 flex flex-col justify-center order-2 lg:order-1">
+          <span class="inline-block bg-primary/10 text-primary px-4 py-1.5 rounded-full text-sm font-bold uppercase tracking-wider w-fit mb-6">Education Impact</span>
+          <h2 class="font-heading text-3xl lg:text-4xl font-bold text-charcoal mb-6">From the Streets to the University Classroom</h2>
+          <blockquote class="text-slate-600 text-lg leading-relaxed mb-8 italic">
+            "I thought my academic journey had ended after high school. Lintel Aid didn't just give me a scholarship; they gave me a future I never dared to dream of."
+          </blockquote>
+          <div class="flex items-center gap-4 mb-8">
+            <img alt="Isaac Clottey" class="h-14 w-14 rounded-full object-cover shrink-0" src="https://media.licdn.com/dms/image/v2/D4D22AQEzOcFQTT6QmA/feedshare-shrink_1280/B4DZPAu.EkHMAo-/0/1734105414783?e=1772064000&v=beta&t=krhIQlHnVnpY21p5-ZmiIU7aTBxnyQ9J_Nmk8PW01-Q"/>
+            <div>
+              <div class="font-bold text-charcoal">Isaac Clottey</div>
+              <div class="text-sm text-slate-500">Scholarship Beneficiary</div>
+            </div>
+          </div>
+          <a class="text-primary font-bold inline-flex items-center gap-2 hover:gap-3 transition-all" href="impact.html#stories">Read Isaac's Full Story <span class="material-icons-outlined">east</span></a>
+        </div>
+        <div class="relative h-80 lg:h-auto min-h-[400px] order-1 lg:order-2">
+          <img alt="Isaac Clottey, Scholarship Recipient" class="absolute inset-0 w-full h-full object-cover" src="https://media.licdn.com/dms/image/v2/D4D22AQEzOcFQTT6QmA/feedshare-shrink_1280/B4DZPAu.EkHMAo-/0/1734105414783?e=1772064000&v=beta&t=krhIQlHnVnpY21p5-ZmiIU7aTBxnyQ9J_Nmk8PW01-Q"/>
+          <div class="absolute inset-0 bg-gradient-to-t from-charcoal/60 to-transparent lg:from-transparent"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Awards & Recognitions Carousel -->
+  <section class="py-24 bg-charcoal text-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="font-heading text-3xl md:text-4xl font-bold text-center mb-12">Awards &amp; Recognitions</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="bg-white/5 rounded-2xl p-6 border border-white/10 text-center">
+          <span class="material-icons-outlined text-4xl text-primary mb-3">emoji_events</span>
+          <h4 class="font-heading font-bold mb-1">Coca-Cola Achievers Award</h4>
+          <p class="text-slate-400 text-sm">2017</p>
+        </div>
+        <div class="bg-white/5 rounded-2xl p-6 border border-white/10 text-center">
+          <span class="material-icons-outlined text-4xl text-primary mb-3">military_tech</span>
+          <h4 class="font-heading font-bold mb-1">Top 30 Under 30 – The Future of Ghana</h4>
+          <p class="text-slate-400 text-sm">2018</p>
+        </div>
+        <div class="bg-white/5 rounded-2xl p-6 border border-white/10 text-center">
+          <span class="material-icons-outlined text-4xl text-primary mb-3">workspace_premium</span>
+          <h4 class="font-heading font-bold mb-1">Ghana Humanitarian and Business Award</h4>
+          <p class="text-slate-400 text-sm">2018 – National Youth Volunteer in rural humanitarian work</p>
+        </div>
+        <div class="bg-white/5 rounded-2xl p-6 border border-white/10 text-center">
+          <span class="material-icons-outlined text-4xl text-primary mb-3">star</span>
+          <h4 class="font-heading font-bold mb-1">Winner, Community Development – 40Under40 Awards</h4>
+          <p class="text-slate-400 text-sm">2018</p>
+        </div>
+        <div class="bg-white/5 rounded-2xl p-6 border border-white/10 text-center sm:col-span-2">
+          <span class="material-icons-outlined text-4xl text-primary mb-3">diamond</span>
+          <h4 class="font-heading font-bold mb-1">Youth Leadership Parliament – Woman of the Year</h4>
+          <p class="text-slate-400 text-sm">2018</p>
+        </div>
+        <div class="bg-white/5 rounded-2xl p-6 border border-white/10 text-center">
+          <span class="material-icons-outlined text-4xl text-primary mb-3">verified</span>
+          <h4 class="font-heading font-bold mb-1">Youth Empowerment Humanitarian Award</h4>
+          <p class="text-slate-400 text-sm">2021</p>
+        </div>
+        <div class="bg-white/5 rounded-2xl p-6 border border-white/10 text-center">
+          <span class="material-icons-outlined text-4xl text-primary mb-3">assistant_photo</span>
+          <h4 class="font-heading font-bold mb-1">Humanitarian Awards Global – Certificate of Achievement</h4>
+          <p class="text-slate-400 text-sm">2021</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Embedded Video Section -->
+  <section class="py-24 bg-beige">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="font-heading text-3xl md:text-4xl font-bold text-charcoal text-center mb-4">See Lintel Aid in Action</h2>
+      <p class="text-slate-600 text-center mb-12 max-w-2xl mx-auto">Watch our projects and events from the Bolga East Project, school outreaches, women empowerment, and more.</p>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="bg-white rounded-2xl overflow-hidden border border-slate-100 shadow-sm">
+          <div class="aspect-video relative">
+            <iframe class="absolute inset-0 w-full h-full" src="https://www.youtube.com/embed/XZ0UAKQ8j6k" title="Lintel Aid Ghana – Creating Hope" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          <div class="p-4">
+            <h4 class="font-heading font-bold text-charcoal">Creating Hope in Communities</h4>
+            <a class="text-primary text-sm font-medium hover:underline" href="https://youtu.be/XZ0UAKQ8j6k" target="_blank" rel="noopener">Watch on YouTube</a>
+          </div>
+        </div>
+        <div class="bg-white rounded-2xl overflow-hidden border border-slate-100 shadow-sm">
+          <div class="aspect-video relative">
+            <iframe class="absolute inset-0 w-full h-full" src="https://www.youtube.com/embed/_m5fgNTqd64" title="Lintel Aid Ghana – Impacting Lives" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          <div class="p-4">
+            <h4 class="font-heading font-bold text-charcoal">Impacting Lives Across Ghana</h4>
+            <a class="text-primary text-sm font-medium hover:underline" href="https://youtu.be/_m5fgNTqd64" target="_blank" rel="noopener">Watch on YouTube</a>
+          </div>
+        </div>
+        <div class="bg-white rounded-2xl overflow-hidden border border-slate-100 shadow-sm">
+          <div class="aspect-video relative">
+            <iframe class="absolute inset-0 w-full h-full" src="https://www.youtube.com/embed/E85eyBhRYGY" title="Lintel Aid Ghana – Education & Empowerment" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          <div class="p-4">
+            <h4 class="font-heading font-bold text-charcoal">Education &amp; Empowerment</h4>
+            <a class="text-primary text-sm font-medium hover:underline" href="https://youtu.be/E85eyBhRYGY" target="_blank" rel="noopener">Watch on YouTube</a>
+          </div>
+        </div>
+        <div class="bg-white rounded-2xl overflow-hidden border border-slate-100 shadow-sm">
+          <div class="aspect-video relative">
+            <iframe class="absolute inset-0 w-full h-full" src="https://www.youtube.com/embed/iDP-1QOZT4M" title="Lintel Aid Ghana – Youth & Women" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          <div class="p-4">
+            <h4 class="font-heading font-bold text-charcoal">Youth &amp; Women Programmes</h4>
+            <a class="text-primary text-sm font-medium hover:underline" href="https://youtu.be/iDP-1QOZT4M" target="_blank" rel="noopener">Watch on YouTube</a>
+          </div>
+        </div>
+        <div class="bg-white rounded-2xl overflow-hidden border border-slate-100 shadow-sm">
+          <div class="aspect-video relative">
+            <iframe class="absolute inset-0 w-full h-full" src="https://www.youtube.com/embed/6001s7J0OIc" title="Lintel Aid Ghana – Community Outreach" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          <div class="p-4">
+            <h4 class="font-heading font-bold text-charcoal">Community Outreach</h4>
+            <a class="text-primary text-sm font-medium hover:underline" href="https://youtu.be/6001s7J0OIc" target="_blank" rel="noopener">Watch on YouTube</a>
+          </div>
+        </div>
+        <div class="bg-white rounded-2xl overflow-hidden border border-slate-100 shadow-sm">
+          <div class="aspect-video relative">
+            <iframe class="absolute inset-0 w-full h-full" src="https://www.youtube.com/embed/4tvdic6KlsE" title="Lintel Aid Ghana – Hope to Lives" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          <div class="p-4">
+            <h4 class="font-heading font-bold text-charcoal">Hope to Lives</h4>
+            <a class="text-primary text-sm font-medium hover:underline" href="https://youtu.be/4tvdic6KlsE" target="_blank" rel="noopener">Watch on YouTube</a>
+          </div>
+        </div>
+        <div class="bg-white rounded-2xl overflow-hidden border border-slate-100 shadow-sm">
+          <div class="aspect-video relative">
+            <iframe class="absolute inset-0 w-full h-full" src="https://www.youtube.com/embed/qJeV7LfRIfo" title="Lintel Aid Ghana – Projects & Events" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          <div class="p-4">
+            <h4 class="font-heading font-bold text-charcoal">Projects &amp; Events</h4>
+            <a class="text-primary text-sm font-medium hover:underline" href="https://youtu.be/qJeV7LfRIfo" target="_blank" rel="noopener">Watch on YouTube</a>
+          </div>
+        </div>
+        <div class="bg-white rounded-2xl overflow-hidden border border-slate-100 shadow-sm">
+          <div class="aspect-video relative">
+            <iframe class="absolute inset-0 w-full h-full" src="https://www.youtube.com/embed/P9R7PBvayNk" title="Lintel Aid Ghana – Transforming Communities" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          <div class="p-4">
+            <h4 class="font-heading font-bold text-charcoal">Transforming Communities</h4>
+            <a class="text-primary text-sm font-medium hover:underline" href="https://youtu.be/P9R7PBvayNk" target="_blank" rel="noopener">Watch on YouTube</a>
+          </div>
+        </div>
+      </div>
+      <div class="text-center mt-10">
+        <a class="inline-flex items-center gap-2 bg-primary text-white px-6 py-3 rounded-full font-semibold hover:bg-orange-600 transition-colors" href="media.html">View All Videos &amp; Photos</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Latest News & Updates -->
+  <section class="py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="font-heading text-3xl md:text-4xl font-bold text-charcoal text-center mb-4">Latest News &amp; Updates</h2>
+      <p class="text-slate-600 text-center mb-12">Stay informed about our programmes and impact.</p>
+      <div class="grid md:grid-cols-3 gap-8">
+        <article class="bg-grey-card rounded-2xl overflow-hidden border border-slate-100 hover:shadow-lg transition-shadow">
+          <div class="h-48 bg-teal/20 flex items-center justify-center"><span class="material-icons-outlined text-teal text-5xl">school</span></div>
+          <div class="p-6">
+            <span class="text-sm text-slate-500">Nov 2024</span>
+            <h3 class="font-heading text-xl font-bold text-charcoal mt-2 mb-3">Scholarship Award Ceremony 2024</h3>
+            <p class="text-slate-600 text-sm mb-4">Over 50 brilliant but needy students received scholarships to continue their education.</p>
+            <a class="text-primary font-semibold text-sm hover:underline" href="impact.html">Read More</a>
+          </div>
+        </article>
+        <article class="bg-grey-card rounded-2xl overflow-hidden border border-slate-100 hover:shadow-lg transition-shadow">
+          <div class="h-48 bg-amber-100 flex items-center justify-center"><span class="material-icons-outlined text-amber-700 text-5xl">groups</span></div>
+          <div class="p-6">
+            <span class="text-sm text-slate-500">Oct 2026</span>
+            <h3 class="font-heading text-xl font-bold text-charcoal mt-2 mb-3">Women Empowerment Workshop – Northern Region</h3>
+            <p class="text-slate-600 text-sm mb-4">Financial literacy and vocational skills training for 200+ women in Bolga East.</p>
+            <a class="text-primary font-semibold text-sm hover:underline" href="impact.html">Read More</a>
+          </div>
+        </article>
+        <article class="bg-grey-card rounded-2xl overflow-hidden border border-slate-100 hover:shadow-lg transition-shadow">
+          <div class="h-48 bg-red-100 flex items-center justify-center"><span class="material-icons-outlined text-red-600 text-5xl">volunteer_activism</span></div>
+          <div class="p-6">
+            <span class="text-sm text-slate-500">Sep 2026</span>
+            <h3 class="font-heading text-xl font-bold text-charcoal mt-2 mb-3">Annual Orphanage Support &amp; Visit</h3>
+            <p class="text-slate-600 text-sm mb-4">Donations and mentorship activities at partner orphanages in Accra and Tamale.</p>
+            <a class="text-primary font-semibold text-sm hover:underline" href="impact.html">Read More</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Partners & Supporters Strip -->
+  <section class="py-16 bg-grey-card border-y border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="font-heading text-2xl font-bold text-charcoal text-center mb-10">Partners &amp; Supporters</h2>
+      <div class="flex flex-wrap justify-center items-center gap-12 text-slate-400">
+        <span class="material-icons-outlined text-5xl">business</span>
+        <span class="material-icons-outlined text-5xl">school</span>
+        <span class="material-icons-outlined text-5xl">church</span>
+        <span class="material-icons-outlined text-5xl">groups</span>
+        <p class="text-slate-500 text-sm w-full text-center">Schools, corporate sponsors, church communities, and institutional partners.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-charcoal text-slate-300 pt-16 pb-8">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid md:grid-cols-4 gap-12 mb-12">
+        <div class="md:col-span-2">
+          <div class="flex items-center gap-3 mb-6">
+            <a href="index.html" class="flex items-center gap-3">
+              <img alt="Lintel Aid Ghana Logo" class="h-12 w-12 object-contain rounded-full" src="images/image_1.png"/>
+            </a>
+            <span class="font-heading text-xl font-extrabold tracking-tight text-white">LINTEL AID <span class="text-primary">GHANA</span></span>
+          </div>
+          <p class="max-w-sm mb-6">Creating &amp; Impacting Hope to Lives. A youth-driven NGO empowering children, women, and communities in Ghana through education, economic empowerment, and poverty alleviation.</p>
+          <div class="flex gap-4">
+            <a class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-primary transition-colors" href="https://www.facebook.com/lintelaidghana/" target="_blank" rel="noopener" aria-label="Facebook"><span class="material-icons-outlined text-lg">facebook</span></a>
+          <a class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-primary transition-colors shrink-0" href="#" aria-label="Instagram"><span class="material-icons-outlined text-xl leading-none">camera_alt</span></a>
+          <a class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-primary transition-colors shrink-0" href="https://gh.linkedin.com/company/lintel-aid-ghana" target="_blank" rel="noopener" aria-label="LinkedIn"><svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
+            <a class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-primary transition-colors" href="https://www.youtube.com/@lindateye1487" target="_blank" rel="noopener" aria-label="YouTube"><span class="material-icons-outlined text-lg">play_circle</span></a>
+          </div>
+        </div>
+        <div>
+          <h4 class="font-heading font-bold text-white mb-6">Quick Links</h4>
+          <ul class="space-y-3">
+            <li><a class="hover:text-primary transition-colors" href="about.html">About</a></li>
+            <li><a class="hover:text-primary transition-colors" href="programs.html">Programs</a></li>
+            <li><a class="hover:text-primary transition-colors" href="impact.html">Impact &amp; Stories</a></li>
+            <li><a class="hover:text-primary transition-colors" href="media.html">Media / Photos</a></li>
+            <li><a class="hover:text-primary transition-colors" href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-heading font-bold text-white mb-6">Contact</h4>
+          <ul class="space-y-3">
+            <li class="flex items-center gap-2"><span class="material-icons-outlined text-primary text-sm">location_on</span> Accra, Ghana</li>
+            <li class="flex items-center gap-2"><span class="material-icons-outlined text-primary text-sm">mail</span> info@lintelaidghana.org</li>
+            <li class="flex items-center gap-2"><span class="material-icons-outlined text-primary text-sm">phone</span> 0549811336</li>
+          </ul>
+          <iframe name="newsletter-form-iframe" id="newsletter-form-iframe" class="hidden w-0 h-0 border-0" title="Newsletter subscribe"></iframe>
+          <form id="newsletter-form" class="mt-6" action="#" method="post">
+            <label for="newsletter-email" class="sr-only">Email</label>
+            <input id="newsletter-email" type="email" placeholder="Your email" required class="w-full px-4 py-2 rounded-lg bg-white/10 border border-white/20 text-white placeholder-slate-500 focus:ring-2 focus:ring-primary focus:border-transparent outline-none"/>
+            <button type="submit" class="mt-2 w-full bg-primary text-white py-2 rounded-lg font-semibold hover:bg-orange-600 transition-colors">Subscribe</button>
+          </form>
+          <p id="newsletter-success-msg" class="hidden mt-2 text-sm text-teal font-semibold">Thanks for subscribing!</p>
+        </div>
+      </div>
+      <div class="pt-8 border-t border-slate-700 text-center text-sm text-slate-500">
+        <p>© 2026 Lintel Aid Ghana. All Rights Reserved. "Creating Hope, Impacting Lives"</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Event Alert Modal -->
+  <div id="event-alert-modal" class="fixed inset-0 z-[60] hidden items-center justify-center p-4 bg-black/60 backdrop-blur-sm">
+    <div class="bg-white w-full max-w-2xl rounded-3xl shadow-2xl overflow-hidden relative">
+      <button id="event-modal-close" class="absolute top-4 right-4 z-20 bg-white/20 hover:bg-white/40 p-2 rounded-full transition-colors text-charcoal" aria-label="Close">
+        <span class="material-icons-outlined text-xl block">close</span>
+      </button>
+      <div class="flex flex-col md:flex-row">
+        <div class="w-full md:w-5/12 bg-primary relative overflow-hidden flex flex-col justify-center items-center p-8">
+          <div class="absolute -top-12 -left-12 w-32 h-32 bg-white/10 rounded-full"></div>
+          <div class="absolute -bottom-12 -right-12 w-48 h-48 bg-black/5 rounded-full"></div>
+          <div class="relative z-10 text-center">
+            <img alt="Lintel Aid Ghana Logo" class="w-32 h-32 object-contain mx-auto mb-4 drop-shadow-lg" src="Pages/image.png"/>
+            <h3 class="font-heading text-white font-bold text-lg uppercase tracking-wider">Impact Lives</h3>
+            <p class="text-orange-100 text-sm mt-2 font-medium">Join our mission to empower youth and women across Ghana.</p>
+          </div>
+        </div>
+        <div class="w-full md:w-7/12 p-6 md:p-10 flex flex-col">
+          <span class="inline-block px-3 py-1 bg-orange-100 text-primary text-xs font-bold rounded-full uppercase tracking-widest mb-4">First Project 2026</span>
+          <h2 class="font-heading text-2xl md:text-3xl font-extrabold text-charcoal leading-tight">Journey Back to <span class="text-primary">Perseverance School 2026</span></h2>
+          <p class="text-slate-600 mt-4 leading-relaxed text-sm">Perseverance School is in Amanase, a satellite village of Aboa-Besease in the Yilo Krobo Municipality, Eastern Region. We're donating care packages to club members: for girls (sanitary towels, panty liner, T-roll, tissue, bathing soap, deodorant, chocolate toffees); for boys (T-shirt, boxer shorts, T-roll, bathing soap, shaving stick, deodorant). General donations: clothing, educational materials, footwear, water, drinks.</p>
+          <div class="mt-6 space-y-2">
+            <div class="flex items-center text-slate-700"><span class="material-icons-outlined text-primary mr-3 text-lg">calendar_today</span><span class="font-semibold text-sm">April 2026</span></div>
+            <div class="flex items-center text-slate-700"><span class="material-icons-outlined text-primary mr-3 text-lg">location_on</span><span class="font-semibold text-sm">Amanase, Yilo Krobo, Eastern Region</span></div>
+          </div>
+          <div class="mt-8 flex flex-col gap-3">
+            <a href="donate.html" class="w-full bg-primary hover:bg-orange-600 text-white font-bold py-4 rounded-xl shadow-lg transition-all flex items-center justify-center gap-2">Donate Now <span class="material-icons-outlined text-sm">arrow_forward</span></a>
+            <a href="media.html#videos-section" class="w-full bg-grey-card hover:bg-slate-200 text-charcoal font-bold py-4 rounded-xl transition-all text-center">Watch Video</a>
+          </div>
+          <div class="mt-6 pt-6 border-t border-slate-100 flex items-center justify-between">
+            <label class="flex items-center cursor-pointer group">
+              <input type="checkbox" id="event-dont-show" class="rounded border-slate-300 text-primary focus:ring-primary w-4 h-4"/>
+              <span class="ml-2 text-xs text-slate-500 group-hover:text-slate-700">Don't show this again</span>
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Floating Donate Button (Mobile) -->
+  <a href="donate.html" class="fixed bottom-6 right-6 z-40 lg:hidden bg-primary text-white px-6 py-4 rounded-full font-bold shadow-xl hover:bg-orange-600 transition-colors flex items-center gap-2">
+    <span class="material-icons-outlined">volunteer_activism</span> Donate
+  </a>
+
+  <script>
+    document.getElementById('mobile-menu-btn')?.addEventListener('click', function() {
+      document.getElementById('mobile-menu').classList.toggle('hidden');
+    });
+    (function() {
+      var modal = document.getElementById('event-alert-modal');
+      var closeBtn = document.getElementById('event-modal-close');
+      var dontShow = document.getElementById('event-dont-show');
+      var key = 'lintel-aid-event-alert-dismissed';
+      function hide() { modal.classList.add('hidden'); modal.classList.remove('flex'); }
+      function show() { modal.classList.remove('hidden'); modal.classList.add('flex'); }
+      if (localStorage.getItem(key)) { hide(); return; }
+      show();
+      closeBtn.addEventListener('click', function() {
+        if (dontShow.checked) localStorage.setItem(key, '1');
+        hide();
+      });
+      dontShow.addEventListener('change', function() {
+        if (this.checked) localStorage.setItem(key, '1');
+      });
+      modal.addEventListener('click', function(e) {
+        if (e.target === modal) { if (dontShow.checked) localStorage.setItem(key, '1'); hide(); }
+      });
+    })();
+    (function() {
+      var form = document.getElementById('newsletter-form');
+      var successMsg = document.getElementById('newsletter-success-msg');
+      var formAction = 'https://docs.google.com/forms/d/e/1FAIpQLSf-oVUxkp7Wx_ro_PA84slt-ky1kO8fNzcmyn0YLXuttl1TwA/formResponse';
+      var emailEntryId = 'entry.1234567890';
+      if (form) {
+        form.addEventListener('submit', function(e) {
+          e.preventDefault();
+          var emailEl = document.getElementById('newsletter-email');
+          if (!emailEl || !emailEl.value.trim()) return;
+          var f = document.createElement('form');
+          f.method = 'POST';
+          f.action = formAction;
+          f.target = 'newsletter-form-iframe';
+          f.style.display = 'none';
+          var input = document.createElement('input');
+          input.type = 'hidden';
+          input.name = emailEntryId;
+          input.value = emailEl.value.trim();
+          f.appendChild(input);
+          document.body.appendChild(f);
+          f.submit();
+          document.body.removeChild(f);
+          form.reset();
+          if (successMsg) { successMsg.classList.remove('hidden'); setTimeout(function() { successMsg.classList.add('hidden'); }, 5000); }
+        });
+      }
+    })();
+  </script>
+</body>
+</html>

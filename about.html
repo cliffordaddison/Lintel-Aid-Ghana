@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Us | Lintel Aid Ghana – Founder &amp; Team</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet"/>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: "#E85D04",
+            charcoal: "#1A1A1A",
+            beige: "#FAF7F2",
+            teal: "#0D9488",
+            "grey-card": "#F1F5F9",
+          },
+          fontFamily: { heading: ["Poppins", "sans-serif"], body: ["Open Sans", "sans-serif"] },
+        },
+      },
+    };
+  </script>
+  <style>
+    body { font-family: 'Open Sans', sans-serif; }
+    h1, h2, h3, h4, .font-heading { font-family: 'Poppins', sans-serif; }
+    .glass-nav { backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); }
+  </style>
+</head>
+<body class="bg-beige text-charcoal font-body antialiased">
+  <nav class="fixed top-0 w-full z-50 glass-nav border-b border-slate-200/50 bg-white/90">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-20">
+        <a href="index.html" class="flex items-center gap-3">
+          <img alt="Lintel Aid Ghana Logo" class="h-12 w-12 object-contain rounded-full" src="images/image.png"/>
+          <span class="hidden md:block font-heading text-xl font-extrabold tracking-tight text-charcoal">LINTEL AID <span class="text-primary">GHANA</span></span>
+        </a>
+        <div class="hidden lg:flex items-center gap-8 font-medium text-charcoal">
+          <a class="hover:text-primary transition-colors" href="index.html">Home</a>
+          <a class="text-primary font-semibold" href="about.html">About</a>
+          <a class="hover:text-primary transition-colors" href="programs.html">Programs</a>
+          <a class="hover:text-primary transition-colors" href="impact.html">Impact &amp; Stories</a>
+          <a class="hover:text-primary transition-colors" href="media.html">Media</a>
+          <a class="hover:text-primary transition-colors" href="get-involved.html">Get Involved</a>
+          <a class="bg-primary hover:bg-orange-600 text-white px-6 py-2.5 rounded-full font-semibold transition-all shadow-lg shadow-primary/25" href="donate.html">Donate</a>
+          <a class="hover:text-primary transition-colors" href="contact.html">Contact</a>
+        </div>
+        <button id="mobile-menu-btn" class="lg:hidden p-2 rounded-md text-charcoal" aria-label="Menu"><span class="material-icons-outlined">menu</span></button>
+      </div>
+    </div>
+    <div id="mobile-menu" class="hidden lg:hidden border-t border-slate-200 bg-white px-4 py-4 space-y-2">
+      <a class="block py-2 hover:text-primary" href="index.html">Home</a>
+      <a class="block py-2 text-primary font-semibold" href="about.html">About</a>
+      <a class="block py-2 hover:text-primary" href="programs.html">Programs</a>
+      <a class="block py-2 hover:text-primary" href="impact.html">Impact &amp; Stories</a>
+      <a class="block py-2 hover:text-primary" href="media.html">Media</a>
+      <a class="block py-2 hover:text-primary" href="get-involved.html">Get Involved</a>
+      <a class="block py-2 text-primary font-semibold" href="donate.html">Donate</a>
+      <a class="block py-2 hover:text-primary" href="contact.html">Contact</a>
+    </div>
+  </nav>
+
+  <main class="pt-20">
+    <!-- Breadcrumb -->
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+      <nav class="text-sm text-slate-500">
+        <a class="hover:text-primary" href="index.html">Home</a>
+        <span class="mx-2">/</span>
+        <span class="text-charcoal font-medium">About</span>
+      </nav>
+    </div>
+
+    <!-- Hero - Who We Are -->
+    <section class="py-16 lg:py-24 relative border-y border-slate-100 overflow-hidden">
+      <div class="absolute inset-0 z-0">
+        <img alt="Who We Are – Lintel Aid Ghana" class="w-full h-full object-cover" src="images/WhatsApp Image 2026-02-04 at 3.02.21 PM.jpeg"/>
+        <div class="absolute inset-0 bg-charcoal/70"></div>
+      </div>
+      <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white">
+        <h1 class="font-heading text-4xl md:text-5xl font-extrabold mb-6">Who We Are</h1>
+        <p class="max-w-3xl mx-auto text-lg text-slate-200 leading-relaxed">
+          Lintel Aid Ghana started from a grassroots passion to support children and youth. Inspired by Linda Teye's journey of supporting underprivileged communities, we have grown into a structured NGO focused on education, economic empowerment, and poverty alleviation across Ghana.
+        </p>
+      </div>
+    </section>
+
+    <!-- Founder & Team -->
+    <section class="py-24 bg-beige">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="font-heading text-3xl md:text-4xl font-bold text-charcoal text-center mb-4">Founder &amp; Team</h2>
+        <p class="text-slate-600 text-center mb-16 max-w-2xl mx-auto">Meet the people behind Lintel Aid Ghana – our founder, leadership, and core team.</p>
+
+        <!-- Founder Card -->
+        <div class="max-w-4xl mx-auto mb-20">
+          <div class="bg-white rounded-3xl overflow-hidden border border-slate-100 shadow-xl flex flex-col lg:flex-row">
+            <div class="lg:w-2/5 h-80 lg:h-auto bg-grey-card flex items-center justify-center overflow-hidden">
+              <img alt="Linda Teye – Founder, Lintel Aid Ghana" class="w-full h-full object-cover object-center" src="images/WhatsApp Image 2026-02-04 at 3.02.22 PM.jpeg"/>
+            </div>
+            <div class="lg:w-3/5 p-8 lg:p-12 flex flex-col justify-center">
+              <span class="inline-block bg-primary/10 text-primary px-4 py-1 rounded-full text-sm font-bold uppercase tracking-wider w-fit mb-4">Founder</span>
+              <h3 class="font-heading text-2xl md:text-3xl font-bold text-charcoal mb-4">Linda Teye</h3>
+              <p class="text-slate-600 leading-relaxed mb-6">
+                Linda Teye is the founder of Lintel Aid Ghana. Her humanitarian leadership and dedication to supporting children and youth have been recognized through multiple awards, including the Coca-Cola Achievers Award (2017), Top 30 Under 30 – The Future of Ghana (2018), Ghana Humanitarian and Business Award (2018), Winner of the Community Development Category – 40Under40 Awards (2018), Youth Leadership Parliament – Woman of the Year (2018), Youth Empowerment Humanitarian Award (2021), and Humanitarian Awards Global – Certificate of Achievement (2021).
+              </p>
+              <p class="text-slate-600 leading-relaxed">
+                Under her vision, Lintel Aid Ghana has grown from grassroots beginnings into a credible, youth-driven NGO transforming lives through education, women empowerment, and community support across Ghana.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Core Team / Board -->
+        <h3 class="font-heading text-2xl font-bold text-charcoal text-center mb-10">Core Team &amp; Board Members</h3>
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div class="bg-white rounded-2xl overflow-hidden border border-slate-100 shadow-sm text-center p-8">
+            <div class="w-24 h-24 rounded-full bg-teal/20 flex items-center justify-center mx-auto mb-4">
+              <span class="material-icons-outlined text-teal text-4xl">person</span>
+            </div>
+            <h4 class="font-heading font-bold text-charcoal mb-1">Board Member</h4>
+            <p class="text-slate-500 text-sm">Leadership &amp; Strategy</p>
+          </div>
+          <div class="bg-white rounded-2xl overflow-hidden border border-slate-100 shadow-sm text-center p-8">
+            <div class="w-24 h-24 rounded-full bg-primary/20 flex items-center justify-center mx-auto mb-4">
+              <span class="material-icons-outlined text-primary text-4xl">person</span>
+            </div>
+            <h4 class="font-heading font-bold text-charcoal mb-1">Programmes Lead</h4>
+            <p class="text-slate-500 text-sm">Education &amp; SDG Programmes</p>
+          </div>
+          <div class="bg-white rounded-2xl overflow-hidden border border-slate-100 shadow-sm text-center p-8 sm:col-span-2 lg:col-span-1">
+            <div class="w-24 h-24 rounded-full bg-amber-100 flex items-center justify-center mx-auto mb-4">
+              <span class="material-icons-outlined text-amber-700 text-4xl">person</span>
+            </div>
+            <h4 class="font-heading font-bold text-charcoal mb-1">Operations &amp; Partnerships</h4>
+            <p class="text-slate-500 text-sm">Volunteers &amp; Partners</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Vision & Mission (Expanded) -->
+    <section class="py-24 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="font-heading text-3xl md:text-4xl font-bold text-charcoal text-center mb-4">Vision &amp; Mission</h2>
+        <p class="text-slate-600 text-center mb-16 max-w-2xl mx-auto">Our long-term goals are tied to the UN Sustainable Development Goals and scaling impact through partnerships.</p>
+        <div class="grid md:grid-cols-2 gap-12 max-w-4xl mx-auto">
+          <div class="bg-grey-card rounded-2xl p-8 border border-slate-100">
+            <div class="w-14 h-14 rounded-full bg-primary/10 flex items-center justify-center mb-6">
+              <span class="material-icons-outlined text-primary text-3xl">visibility</span>
+            </div>
+            <h3 class="font-heading text-xl font-bold text-charcoal mb-3">Vision</h3>
+            <p class="text-slate-600 leading-relaxed">An impactful world through partnership and collaboration. We aim to scale our programmes and deepen partnerships with schools, corporates, and government to reach more underprivileged children, women, and communities.</p>
+          </div>
+          <div class="bg-grey-card rounded-2xl p-8 border border-slate-100">
+            <div class="w-14 h-14 rounded-full bg-primary/10 flex items-center justify-center mb-6">
+              <span class="material-icons-outlined text-primary text-3xl">track_changes</span>
+            </div>
+            <h3 class="font-heading text-xl font-bold text-charcoal mb-3">Mission</h3>
+            <p class="text-slate-600 leading-relaxed">Creating a positive impact and nurturing lives through empowering, educating and supporting the less privileged. We focus on Quality Education (SDG 4), Eradicating Poverty (SDG 1), and Decent Work &amp; Economic Growth (SDG 8).</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- What Makes Lintel Aid Unique -->
+    <section class="py-24 bg-beige">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="font-heading text-3xl md:text-4xl font-bold text-charcoal text-center mb-4">What Makes Lintel Aid Unique</h2>
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mt-12">
+          <div class="bg-white rounded-2xl p-8 border border-slate-100 shadow-sm text-center">
+            <span class="material-icons-outlined text-primary text-5xl mb-4">home_work</span>
+            <h4 class="font-heading font-bold text-charcoal mb-2">Community-Rooted</h4>
+            <p class="text-slate-600 text-sm">We operate from and with communities, ensuring local ownership and sustainable impact.</p>
+          </div>
+          <div class="bg-white rounded-2xl p-8 border border-slate-100 shadow-sm text-center">
+            <span class="material-icons-outlined text-primary text-5xl mb-4">groups</span>
+            <h4 class="font-heading font-bold text-charcoal mb-2">Strong Volunteer Network</h4>
+            <p class="text-slate-600 text-sm">University students, professionals, and community leaders form the backbone of our outreach.</p>
+          </div>
+          <div class="bg-white rounded-2xl p-8 border border-slate-100 shadow-sm text-center">
+            <span class="material-icons-outlined text-primary text-5xl mb-4">favorite</span>
+            <h4 class="font-heading font-bold text-charcoal mb-2">Focus on the Most Vulnerable</h4>
+            <p class="text-slate-600 text-sm">Children, women, and rural communities are at the heart of every programme.</p>
+          </div>
+          <div class="bg-white rounded-2xl p-8 border border-slate-100 shadow-sm text-center">
+            <span class="material-icons-outlined text-primary text-5xl mb-4">trending_up</span>
+            <h4 class="font-heading font-bold text-charcoal mb-2">Track Record of Results</h4>
+            <p class="text-slate-600 text-sm">Students graduating, women running businesses, and communities lifted through education and empowerment.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Awards & Recognitions (Full Section) -->
+    <section class="py-24 bg-charcoal text-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="font-heading text-3xl md:text-4xl font-bold text-center mb-4">Awards &amp; Recognitions</h2>
+        <p class="text-slate-400 text-center mb-16 max-w-2xl mx-auto">Recognized for humanitarian excellence and youth leadership.</p>
+        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div class="bg-white/5 rounded-2xl p-6 border border-white/10">
+            <span class="material-icons-outlined text-primary text-4xl mb-3">emoji_events</span>
+            <h4 class="font-heading font-bold mb-1">Coca-Cola Achievers Award</h4>
+            <p class="text-slate-400 text-sm">2017</p>
+          </div>
+          <div class="bg-white/5 rounded-2xl p-6 border border-white/10">
+            <span class="material-icons-outlined text-primary text-4xl mb-3">military_tech</span>
+            <h4 class="font-heading font-bold mb-1">Top 30 Under 30 – The Future of Ghana</h4>
+            <p class="text-slate-400 text-sm">2018</p>
+          </div>
+          <div class="bg-white/5 rounded-2xl p-6 border border-white/10">
+            <span class="material-icons-outlined text-primary text-4xl mb-3">workspace_premium</span>
+            <h4 class="font-heading font-bold mb-1">Ghana Humanitarian and Business Award</h4>
+            <p class="text-slate-400 text-sm">2018 – National Youth Volunteer in rural humanitarian work</p>
+          </div>
+          <div class="bg-white/5 rounded-2xl p-6 border border-white/10">
+            <span class="material-icons-outlined text-primary text-4xl mb-3">star</span>
+            <h4 class="font-heading font-bold mb-1">Winner, Community Development – 40Under40 Awards</h4>
+            <p class="text-slate-400 text-sm">2018</p>
+          </div>
+          <div class="bg-white/5 rounded-2xl p-6 border border-white/10">
+            <span class="material-icons-outlined text-primary text-4xl mb-3">diamond</span>
+            <h4 class="font-heading font-bold mb-1">Youth Leadership Parliament – Woman of the Year</h4>
+            <p class="text-slate-400 text-sm">2018</p>
+          </div>
+          <div class="bg-white/5 rounded-2xl p-6 border border-white/10">
+            <span class="material-icons-outlined text-primary text-4xl mb-3">verified</span>
+            <h4 class="font-heading font-bold mb-1">Youth Empowerment Humanitarian Award</h4>
+            <p class="text-slate-400 text-sm">2021</p>
+          </div>
+          <div class="bg-white/5 rounded-2xl p-6 border border-white/10 sm:col-span-2 lg:col-span-1">
+            <span class="material-icons-outlined text-primary text-4xl mb-3">assistant_photo</span>
+            <h4 class="font-heading font-bold mb-1">Humanitarian Awards Global – Certificate of Achievement</h4>
+            <p class="text-slate-400 text-sm">2021</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-charcoal text-slate-300 pt-16 pb-8 border-t border-slate-700">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col md:flex-row justify-between items-center gap-8">
+        <div class="flex items-center gap-3">
+          <a href="index.html"><img alt="Lintel Aid Ghana Logo" class="h-10 w-10 object-contain rounded-full" src="images/image_1.png"/></a>
+          <span class="font-heading font-bold text-white">LINTEL AID <span class="text-primary">GHANA</span></span>
+        </div>
+        <div class="flex flex-wrap items-center gap-8">
+          <span class="flex items-center gap-2 text-slate-400"><span class="material-icons-outlined text-sm">phone</span> 0549811336</span>
+          <a class="hover:text-primary transition-colors" href="index.html">Home</a>
+          <a class="hover:text-primary transition-colors" href="about.html">About</a>
+          <a class="hover:text-primary transition-colors" href="programs.html">Programs</a>
+          <a class="hover:text-primary transition-colors" href="impact.html">Impact</a>
+          <a class="hover:text-primary transition-colors" href="media.html">Media</a>
+          <a class="hover:text-primary transition-colors" href="get-involved.html">Get Involved</a>
+          <a class="hover:text-primary transition-colors" href="donate.html">Donate</a>
+          <a class="hover:text-primary transition-colors" href="contact.html">Contact</a>
+        </div>
+      </div>
+      <div class="pt-8 mt-8 border-t border-slate-700 text-center text-sm text-slate-500">
+        <p>© 2026 Lintel Aid Ghana. All Rights Reserved. "Creating Hope, Impacting Lives"</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('mobile-menu-btn')?.addEventListener('click', function() {
+      document.getElementById('mobile-menu').classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>

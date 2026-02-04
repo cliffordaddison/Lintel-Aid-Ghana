@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Donate | Lintel Aid Ghana</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet"/>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: "#E85D04",
+            charcoal: "#1A1A1A",
+            beige: "#FAF7F2",
+            teal: "#0D9488",
+            "grey-card": "#F1F5F9",
+          },
+          fontFamily: { heading: ["Poppins", "sans-serif"], body: ["Open Sans", "sans-serif"] },
+        },
+      },
+    };
+  </script>
+  <style>
+    body { font-family: 'Open Sans', sans-serif; }
+    h1, h2, h3, h4, .font-heading { font-family: 'Poppins', sans-serif; }
+    .glass-nav { backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); }
+  </style>
+</head>
+<body class="bg-beige text-charcoal font-body antialiased">
+  <nav class="fixed top-0 w-full z-50 glass-nav border-b border-slate-200/50 bg-white/90">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-20">
+        <a href="index.html" class="flex items-center gap-3">
+          <img alt="Lintel Aid Ghana Logo" class="h-12 w-12 object-contain rounded-full" src="images/image.png"/>
+          <span class="hidden md:block font-heading text-xl font-extrabold tracking-tight text-charcoal">LINTEL AID <span class="text-primary">GHANA</span></span>
+        </a>
+        <div class="hidden lg:flex items-center gap-8 font-medium text-charcoal">
+          <a class="hover:text-primary transition-colors" href="index.html">Home</a>
+          <a class="hover:text-primary transition-colors" href="about.html">About</a>
+          <a class="hover:text-primary transition-colors" href="programs.html">Programs</a>
+          <a class="hover:text-primary transition-colors" href="impact.html">Impact &amp; Stories</a>
+          <a class="hover:text-primary transition-colors" href="media.html">Media</a>
+          <a class="hover:text-primary transition-colors" href="get-involved.html">Get Involved</a>
+          <a class="bg-primary hover:bg-orange-600 text-white px-6 py-2.5 rounded-full font-semibold transition-all shadow-lg shadow-primary/25" href="donate.html">Donate</a>
+          <a class="hover:text-primary transition-colors" href="contact.html">Contact</a>
+        </div>
+        <button id="mobile-menu-btn" class="lg:hidden p-2 rounded-md text-charcoal" aria-label="Menu"><span class="material-icons-outlined">menu</span></button>
+      </div>
+    </div>
+    <div id="mobile-menu" class="hidden lg:hidden border-t border-slate-200 bg-white px-4 py-4 space-y-2">
+      <a class="block py-2 hover:text-primary" href="index.html">Home</a>
+      <a class="block py-2 hover:text-primary" href="about.html">About</a>
+      <a class="block py-2 hover:text-primary" href="programs.html">Programs</a>
+      <a class="block py-2 hover:text-primary" href="impact.html">Impact &amp; Stories</a>
+      <a class="block py-2 hover:text-primary" href="media.html">Media</a>
+      <a class="block py-2 hover:text-primary" href="get-involved.html">Get Involved</a>
+      <a class="block py-2 text-primary font-semibold" href="donate.html">Donate</a>
+      <a class="block py-2 hover:text-primary" href="contact.html">Contact</a>
+    </div>
+  </nav>
+
+  <main class="pt-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+      <nav class="text-sm text-slate-500">
+        <a class="hover:text-primary" href="index.html">Home</a>
+        <span class="mx-2">/</span>
+        <span class="text-charcoal font-medium">Donate</span>
+      </nav>
+    </div>
+
+    <header class="py-16 lg:py-24 relative border-y border-slate-100 overflow-hidden">
+      <div class="absolute inset-0 z-0">
+        <img alt="Donate to Lintel Aid Ghana" class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1559027615-cd4628902d4a?w=1600&q=80"/>
+        <div class="absolute inset-0 bg-charcoal/60"></div>
+      </div>
+      <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white">
+        <h1 class="font-heading text-4xl md:text-5xl font-extrabold mb-6">Donate</h1>
+        <p class="max-w-2xl mx-auto text-lg text-white/90 leading-relaxed">
+          Your contribution, no matter how small, can change a child's life forever. One-time or recurring – give where it matters most.
+        </p>
+      </div>
+    </header>
+
+    <section class="py-24 bg-grey-card">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <p class="text-slate-600 mb-3 text-center text-sm font-semibold uppercase tracking-wider">Sponsorship tiers</p>
+        <div class="flex flex-wrap justify-center gap-3 mb-8">
+          <span class="inline-flex items-center px-4 py-2 rounded-full text-sm font-bold border-2 border-amber-700/40 bg-amber-100 text-amber-800 shadow-sm">Bronze GHS 10–50</span>
+          <span class="inline-flex items-center px-4 py-2 rounded-full text-sm font-bold border-2 border-slate-300 bg-slate-100 text-slate-700 shadow-sm">Silver GHS 51–100</span>
+          <span class="inline-flex items-center px-4 py-2 rounded-full text-sm font-bold border-2 border-amber-400 bg-amber-50 text-amber-700 shadow-sm">Gold GHS 101–200</span>
+          <span class="inline-flex items-center px-4 py-2 rounded-full text-sm font-bold border-2 border-slate-400 bg-slate-200 text-slate-800 shadow-sm">Platinum GHS 201–300</span>
+          <span class="inline-flex items-center px-4 py-2 rounded-full text-sm font-bold border-2 border-primary/50 bg-primary/10 text-primary shadow-sm">Diamond GHS 301+</span>
+        </div>
+        <form id="donate-form" class="bg-white rounded-2xl border border-slate-100 shadow-sm p-8 space-y-6">
+          <div class="grid sm:grid-cols-2 gap-6">
+            <div>
+              <label for="donate-name" class="block text-sm font-semibold text-charcoal mb-2">Name</label>
+              <input id="donate-name" type="text" required class="w-full px-4 py-3 rounded-lg border border-slate-200 focus:ring-2 focus:ring-primary focus:border-transparent outline-none"/>
+            </div>
+            <div>
+              <label for="donate-phone" class="block text-sm font-semibold text-charcoal mb-2">Phone Number</label>
+              <input id="donate-phone" type="tel" required class="w-full px-4 py-3 rounded-lg border border-slate-200 focus:ring-2 focus:ring-primary focus:border-transparent outline-none" placeholder="e.g. 0549811336"/>
+            </div>
+          </div>
+          <div>
+            <label for="cause" class="block text-sm font-semibold text-charcoal mb-2">Choose a Cause</label>
+            <select id="cause" class="w-full px-4 py-3 rounded-lg border border-slate-200 focus:ring-2 focus:ring-primary focus:border-transparent outline-none">
+              <option value="Where Needed Most">Where Needed Most</option>
+              <option value="Education & Scholarships">Education &amp; Scholarships</option>
+              <option value="Women Empowerment">Women Empowerment</option>
+              <option value="Poverty Alleviation & Relief">Poverty Alleviation &amp; Relief</option>
+            </select>
+          </div>
+          <div>
+            <label class="block text-sm font-semibold text-charcoal mb-3">Amount (GHS)</label>
+            <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
+              <label class="relative cursor-pointer">
+                <input type="radio" name="amount" value="20" class="peer sr-only"/>
+                <div class="p-4 rounded-xl border-2 border-slate-200 peer-checked:border-primary peer-checked:bg-primary/5 text-center font-bold text-charcoal">GHS 20</div>
+              </label>
+              <label class="relative cursor-pointer">
+                <input type="radio" name="amount" value="50" class="peer sr-only"/>
+                <div class="p-4 rounded-xl border-2 border-slate-200 peer-checked:border-primary peer-checked:bg-primary/5 text-center font-bold text-charcoal">GHS 50</div>
+              </label>
+              <label class="relative cursor-pointer">
+                <input type="radio" name="amount" value="100" class="peer sr-only"/>
+                <div class="p-4 rounded-xl border-2 border-slate-200 peer-checked:border-primary peer-checked:bg-primary/5 text-center font-bold text-charcoal">GHS 100</div>
+              </label>
+              <label class="relative cursor-pointer">
+                <input type="radio" name="amount" value="custom" class="peer sr-only"/>
+                <div class="p-4 rounded-xl border-2 border-slate-200 peer-checked:border-primary peer-checked:bg-primary/5 text-center font-bold text-charcoal">Custom</div>
+              </label>
+            </div>
+            <div id="custom-amount-wrap" class="mt-4 hidden">
+              <label for="custom-amount" class="block text-sm font-semibold text-charcoal mb-2">Custom Amount (GHS)</label>
+              <input id="custom-amount" type="number" min="1" placeholder="Enter amount" class="w-full px-4 py-3 rounded-lg border border-slate-200 focus:ring-2 focus:ring-primary focus:border-transparent outline-none"/>
+            </div>
+          </div>
+          <div>
+            <label class="block text-sm font-semibold text-charcoal mb-3">Transfer Mode</label>
+            <div class="flex flex-wrap gap-4">
+              <label class="flex items-center gap-2 cursor-pointer">
+                <input type="radio" name="transfer" value="momo" checked class="text-primary focus:ring-primary"/>
+                <span>Mobile Money (MoMo)</span>
+              </label>
+              <label class="flex items-center gap-2 cursor-pointer">
+                <input type="radio" name="transfer" value="bank" class="text-primary focus:ring-primary"/>
+                <span>Bank Transfer / Other</span>
+              </label>
+            </div>
+          </div>
+          <button type="submit" id="donate-btn" class="w-full sm:w-auto bg-primary text-white px-10 py-4 rounded-full font-bold text-lg hover:bg-orange-600 transition-colors">Donate</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- MoMo / Bank modal -->
+    <div id="donate-modal" class="fixed inset-0 z-50 hidden items-center justify-center p-4 bg-black/60 backdrop-blur-sm">
+      <div class="bg-white w-full max-w-md rounded-2xl shadow-2xl p-8 relative">
+        <button id="donate-modal-close" class="absolute top-4 right-4 p-2 rounded-full hover:bg-slate-100 text-charcoal" aria-label="Close"><span class="material-icons-outlined">close</span></button>
+        <div id="donate-modal-momo" class="space-y-4">
+          <h3 class="font-heading text-xl font-bold text-charcoal">Donate via Mobile Money</h3>
+          <p class="text-slate-600 text-sm">Send your donation to:</p>
+          <div class="bg-grey-card rounded-xl p-4 space-y-2">
+            <p class="font-bold text-charcoal">MoMo Number: <span class="text-primary text-lg">0549811336</span></p>
+            <p class="font-bold text-charcoal">MoMo Name: <span class="text-primary">Lintel Aid Ghana</span></p>
+          </div>
+          <p class="text-slate-600 text-sm">Reference: Your name or phone. Thank you!</p>
+        </div>
+        <div id="donate-modal-bank" class="hidden space-y-4">
+          <h3 class="font-heading text-xl font-bold text-charcoal">Bank Transfer / Other</h3>
+          <p class="text-slate-600">Lintel Aid Ghana will contact you within <strong>2 to 24 hours</strong> via the phone number you provided with the bank transfer details.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- How Your Donation Helps -->
+    <section class="py-24 bg-white">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="font-heading text-3xl font-bold text-charcoal text-center mb-4">How Your Donation Helps</h2>
+        <p class="text-slate-600 text-center mb-12">Transparency: a rough breakdown of how we use funds.</p>
+        <div class="grid sm:grid-cols-3 gap-8 text-center">
+          <div class="p-6 rounded-2xl bg-grey-card border border-slate-100">
+            <div class="w-16 h-16 rounded-full bg-primary/20 flex items-center justify-center mx-auto mb-4">
+              <span class="material-icons-outlined text-primary text-3xl">school</span>
+            </div>
+            <h3 class="font-heading font-bold text-charcoal mb-2">Education &amp; Scholarships</h3>
+            <p class="text-slate-600 text-sm">Scholarships, school supplies, Lintel Clubs, and girl-child education.</p>
+          </div>
+          <div class="p-6 rounded-2xl bg-grey-card border border-slate-100">
+            <div class="w-16 h-16 rounded-full bg-primary/20 flex items-center justify-center mx-auto mb-4">
+              <span class="material-icons-outlined text-primary text-3xl">groups</span>
+            </div>
+            <h3 class="font-heading font-bold text-charcoal mb-2">Women Empowerment</h3>
+            <p class="text-slate-600 text-sm">Vocational training, financial literacy, and micro-credit for women groups.</p>
+          </div>
+          <div class="p-6 rounded-2xl bg-grey-card border border-slate-100">
+            <div class="w-16 h-16 rounded-full bg-primary/20 flex items-center justify-center mx-auto mb-4">
+              <span class="material-icons-outlined text-primary text-3xl">volunteer_activism</span>
+            </div>
+            <h3 class="font-heading font-bold text-charcoal mb-2">Poverty Alleviation &amp; Relief</h3>
+            <p class="text-slate-600 text-sm">Family support, orphanage visits, street children programmes, and relief.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-charcoal text-slate-300 pt-16 pb-8 border-t border-slate-700">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col md:flex-row justify-between items-center gap-8">
+        <div class="flex items-center gap-3">
+          <a href="index.html"><img alt="Lintel Aid Ghana Logo" class="h-10 w-10 object-contain rounded-full" src="images/image_1.png"/></a>
+          <span class="font-heading font-bold text-white">LINTEL AID <span class="text-primary">GHANA</span></span>
+        </div>
+        <div class="flex flex-wrap items-center gap-8">
+          <span class="flex items-center gap-2 text-slate-400"><span class="material-icons-outlined text-sm">phone</span> 0549811336</span>
+          <a class="hover:text-primary transition-colors" href="index.html">Home</a>
+          <a class="hover:text-primary transition-colors" href="about.html">About</a>
+          <a class="hover:text-primary transition-colors" href="programs.html">Programs</a>
+          <a class="hover:text-primary transition-colors" href="impact.html">Impact</a>
+          <a class="hover:text-primary transition-colors" href="media.html">Media</a>
+          <a class="hover:text-primary transition-colors" href="get-involved.html">Get Involved</a>
+          <a class="hover:text-primary transition-colors" href="donate.html">Donate</a>
+          <a class="hover:text-primary transition-colors" href="contact.html">Contact</a>
+        </div>
+      </div>
+      <div class="pt-8 mt-8 border-t border-slate-700 text-center text-sm text-slate-500">
+        <p>© 2026 Lintel Aid Ghana. All Rights Reserved. "Creating Hope, Impacting Lives"</p>
+      </div>
+    </div>
+  </footer>
+
+  <iframe name="donate-form-iframe" id="donate-form-iframe" class="hidden w-0 h-0 border-0" title="Donation form"></iframe>
+  <script>
+    document.getElementById('mobile-menu-btn')?.addEventListener('click', function() {
+      document.getElementById('mobile-menu').classList.toggle('hidden');
+    });
+    document.querySelectorAll('input[name="amount"]').forEach(function(radio) {
+      radio.addEventListener('change', function() {
+        document.getElementById('custom-amount-wrap').classList.toggle('hidden', this.value !== 'custom');
+      });
+    });
+    (function() {
+      var form = document.getElementById('donate-form');
+      var modal = document.getElementById('donate-modal');
+      var modalMomo = document.getElementById('donate-modal-momo');
+      var modalBank = document.getElementById('donate-modal-bank');
+      var formAction = 'https://docs.google.com/forms/d/e/1FAIpQLSee1nnSJMjQjj7tqPNDgzP5Abirw6dtwxsGSnZy2oEMASo4cw/formResponse';
+      var entryIds = { name: 'entry.3000000001', phone: 'entry.3000000002', cause: 'entry.3000000003', amount: 'entry.3000000004' };
+      form.addEventListener('submit', function(e) {
+        e.preventDefault();
+        var amountVal = document.querySelector('input[name="amount"]:checked').value;
+        var amountDisplay = amountVal === 'custom' ? (document.getElementById('custom-amount').value || '') : amountVal;
+        var transferMode = document.querySelector('input[name="transfer"]:checked').value;
+        var f = document.createElement('form');
+        f.method = 'POST';
+        f.action = formAction;
+        f.target = 'donate-form-iframe';
+        f.style.display = 'none';
+        var pairs = [
+          [entryIds.name, document.getElementById('donate-name').value],
+          [entryIds.phone, document.getElementById('donate-phone').value],
+          [entryIds.cause, document.getElementById('cause').value],
+          [entryIds.amount, amountDisplay]
+        ];
+        pairs.forEach(function(pair) {
+          var input = document.createElement('input');
+          input.type = 'hidden';
+          input.name = pair[0];
+          input.value = pair[1];
+          f.appendChild(input);
+        });
+        document.body.appendChild(f);
+        f.submit();
+        document.body.removeChild(f);
+        modal.classList.remove('hidden');
+        modal.classList.add('flex');
+        if (transferMode === 'bank') {
+          modalMomo.classList.add('hidden');
+          modalBank.classList.remove('hidden');
+        } else {
+          modalMomo.classList.remove('hidden');
+          modalBank.classList.add('hidden');
+        }
+      });
+      document.getElementById('donate-modal-close').addEventListener('click', function() {
+        modal.classList.add('hidden');
+        modal.classList.remove('flex');
+      });
+      modal.addEventListener('click', function(e) {
+        if (e.target === modal) { modal.classList.add('hidden'); modal.classList.remove('flex'); }
+      });
+    })();
+  </script>
+</body>
+</html>

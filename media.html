@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Media – Photos &amp; Videos | Lintel Aid Ghana</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet"/>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: "#E85D04",
+            charcoal: "#1A1A1A",
+            beige: "#FAF7F2",
+            teal: "#0D9488",
+            "grey-card": "#F1F5F9",
+          },
+          fontFamily: { heading: ["Poppins", "sans-serif"], body: ["Open Sans", "sans-serif"] },
+        },
+      },
+    };
+  </script>
+  <style>
+    body { font-family: 'Open Sans', sans-serif; }
+    h1, h2, h3, h4, .font-heading { font-family: 'Poppins', sans-serif; }
+    .glass-nav { backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); }
+  </style>
+</head>
+<body class="bg-beige text-charcoal font-body antialiased">
+  <nav class="fixed top-0 w-full z-50 glass-nav border-b border-slate-200/50 bg-white/90">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-20">
+        <a href="index.html" class="flex items-center gap-3">
+          <img alt="Lintel Aid Ghana Logo" class="h-12 w-12 object-contain rounded-full" src="images/image.png"/>
+          <span class="hidden md:block font-heading text-xl font-extrabold tracking-tight text-charcoal">LINTEL AID <span class="text-primary">GHANA</span></span>
+        </a>
+        <div class="hidden lg:flex items-center gap-8 font-medium text-charcoal">
+          <a class="hover:text-primary transition-colors" href="index.html">Home</a>
+          <a class="hover:text-primary transition-colors" href="about.html">About</a>
+          <a class="hover:text-primary transition-colors" href="programs.html">Programs</a>
+          <a class="hover:text-primary transition-colors" href="impact.html">Impact &amp; Stories</a>
+          <a class="text-primary font-semibold" href="media.html">Media</a>
+          <a class="hover:text-primary transition-colors" href="get-involved.html">Get Involved</a>
+          <a class="bg-primary hover:bg-orange-600 text-white px-6 py-2.5 rounded-full font-semibold transition-all shadow-lg shadow-primary/25" href="donate.html">Donate</a>
+          <a class="hover:text-primary transition-colors" href="contact.html">Contact</a>
+        </div>
+        <button id="mobile-menu-btn" class="lg:hidden p-2 rounded-md text-charcoal" aria-label="Menu"><span class="material-icons-outlined">menu</span></button>
+      </div>
+    </div>
+    <div id="mobile-menu" class="hidden lg:hidden border-t border-slate-200 bg-white px-4 py-4 space-y-2">
+      <a class="block py-2 hover:text-primary" href="index.html">Home</a>
+      <a class="block py-2 hover:text-primary" href="about.html">About</a>
+      <a class="block py-2 hover:text-primary" href="programs.html">Programs</a>
+      <a class="block py-2 hover:text-primary" href="impact.html">Impact &amp; Stories</a>
+      <a class="block py-2 text-primary font-semibold" href="media.html">Media</a>
+      <a class="block py-2 hover:text-primary" href="get-involved.html">Get Involved</a>
+      <a class="block py-2 text-primary font-semibold" href="donate.html">Donate</a>
+      <a class="block py-2 hover:text-primary" href="contact.html">Contact</a>
+    </div>
+  </nav>
+
+  <main class="pt-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+      <nav class="text-sm text-slate-500">
+        <a class="hover:text-primary" href="index.html">Home</a>
+        <span class="mx-2">/</span>
+        <span class="text-charcoal font-medium">Media</span>
+      </nav>
+    </div>
+
+    <header class="py-16 lg:py-24 relative border-y border-slate-100 overflow-hidden">
+      <div class="absolute inset-0 z-0">
+        <img alt="Photos and Videos" class="w-full h-full object-cover" src="images/WhatsApp Image 2026-02-04 at 3.14.48 PM (5).jpeg"/>
+        <div class="absolute inset-0 bg-charcoal/60"></div>
+      </div>
+      <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white">
+        <h1 class="font-heading text-4xl md:text-5xl font-extrabold mb-6">Photos &amp; Videos</h1>
+        <p class="max-w-2xl mx-auto text-lg text-white/90 leading-relaxed">
+          Watch our projects and browse photos from school outreaches, women empowerment workshops, orphanage visits, awards ceremonies, and more.
+        </p>
+        <div class="flex flex-wrap justify-center gap-4 mt-8">
+          <button id="tab-videos" class="px-6 py-3 rounded-full font-semibold bg-primary text-white hover:bg-orange-600 transition-colors">Videos</button>
+          <button id="tab-photos" class="px-6 py-3 rounded-full font-semibold bg-grey-card text-charcoal hover:bg-slate-200 transition-colors">Photos</button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Videos Tab -->
+    <section id="videos-section" class="py-24 bg-grey-card">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="font-heading text-3xl font-bold text-charcoal mb-4">See Lintel Aid in Action</h2>
+        <p class="text-slate-600 mb-12">YouTube and Facebook videos from major projects, events, and campaigns – including the Bolga East Project.</p>
+        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div class="bg-white rounded-2xl overflow-hidden border border-slate-100 shadow-sm">
+            <div class="aspect-video relative">
+              <iframe class="absolute inset-0 w-full h-full" src="https://www.youtube.com/embed/XZ0UAKQ8j6k" title="Creating Hope in Communities" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="p-4">
+              <h3 class="font-heading font-bold text-charcoal">Creating Hope in Communities</h3>
+              <a class="text-primary text-sm font-medium hover:underline inline-flex items-center gap-1 mt-2" href="https://youtu.be/XZ0UAKQ8j6k" target="_blank" rel="noopener">Watch on YouTube <span class="material-icons-outlined text-sm">open_in_new</span></a>
+            </div>
+          </div>
+          <div class="bg-white rounded-2xl overflow-hidden border border-slate-100 shadow-sm">
+            <div class="aspect-video relative">
+              <iframe class="absolute inset-0 w-full h-full" src="https://www.youtube.com/embed/_m5fgNTqd64" title="Impacting Lives Across Ghana" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="p-4">
+              <h3 class="font-heading font-bold text-charcoal">Impacting Lives Across Ghana</h3>
+              <a class="text-primary text-sm font-medium hover:underline inline-flex items-center gap-1 mt-2" href="https://youtu.be/_m5fgNTqd64" target="_blank" rel="noopener">Watch on YouTube <span class="material-icons-outlined text-sm">open_in_new</span></a>
+            </div>
+          </div>
+          <div class="bg-white rounded-2xl overflow-hidden border border-slate-100 shadow-sm">
+            <div class="aspect-video relative">
+              <iframe class="absolute inset-0 w-full h-full" src="https://www.youtube.com/embed/E85eyBhRYGY" title="Education & Empowerment" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="p-4">
+              <h3 class="font-heading font-bold text-charcoal">Education &amp; Empowerment</h3>
+              <a class="text-primary text-sm font-medium hover:underline inline-flex items-center gap-1 mt-2" href="https://youtu.be/E85eyBhRYGY" target="_blank" rel="noopener">Watch on YouTube <span class="material-icons-outlined text-sm">open_in_new</span></a>
+            </div>
+          </div>
+          <div class="bg-white rounded-2xl overflow-hidden border border-slate-100 shadow-sm">
+            <div class="aspect-video relative">
+              <iframe class="absolute inset-0 w-full h-full" src="https://www.youtube.com/embed/iDP-1QOZT4M" title="Youth & Women Programmes" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="p-4">
+              <h3 class="font-heading font-bold text-charcoal">Youth &amp; Women Programmes</h3>
+              <a class="text-primary text-sm font-medium hover:underline inline-flex items-center gap-1 mt-2" href="https://youtu.be/iDP-1QOZT4M" target="_blank" rel="noopener">Watch on YouTube <span class="material-icons-outlined text-sm">open_in_new</span></a>
+            </div>
+          </div>
+          <div class="bg-white rounded-2xl overflow-hidden border border-slate-100 shadow-sm">
+            <div class="aspect-video relative">
+              <iframe class="absolute inset-0 w-full h-full" src="https://www.youtube.com/embed/6001s7J0OIc" title="Community Outreach" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="p-4">
+              <h3 class="font-heading font-bold text-charcoal">Community Outreach</h3>
+              <a class="text-primary text-sm font-medium hover:underline inline-flex items-center gap-1 mt-2" href="https://youtu.be/6001s7J0OIc" target="_blank" rel="noopener">Watch on YouTube <span class="material-icons-outlined text-sm">open_in_new</span></a>
+            </div>
+          </div>
+          <div class="bg-white rounded-2xl overflow-hidden border border-slate-100 shadow-sm">
+            <div class="aspect-video relative">
+              <iframe class="absolute inset-0 w-full h-full" src="https://www.youtube.com/embed/4tvdic6KlsE" title="Hope to Lives" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="p-4">
+              <h3 class="font-heading font-bold text-charcoal">Hope to Lives</h3>
+              <a class="text-primary text-sm font-medium hover:underline inline-flex items-center gap-1 mt-2" href="https://youtu.be/4tvdic6KlsE" target="_blank" rel="noopener">Watch on YouTube <span class="material-icons-outlined text-sm">open_in_new</span></a>
+            </div>
+          </div>
+          <div class="bg-white rounded-2xl overflow-hidden border border-slate-100 shadow-sm">
+            <div class="aspect-video relative">
+              <iframe class="absolute inset-0 w-full h-full" src="https://www.youtube.com/embed/qJeV7LfRIfo" title="Projects & Events" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="p-4">
+              <h3 class="font-heading font-bold text-charcoal">Projects &amp; Events</h3>
+              <a class="text-primary text-sm font-medium hover:underline inline-flex items-center gap-1 mt-2" href="https://youtu.be/qJeV7LfRIfo" target="_blank" rel="noopener">Watch on YouTube <span class="material-icons-outlined text-sm">open_in_new</span></a>
+            </div>
+          </div>
+          <div class="bg-white rounded-2xl overflow-hidden border border-slate-100 shadow-sm">
+            <div class="aspect-video relative">
+              <iframe class="absolute inset-0 w-full h-full" src="https://www.youtube.com/embed/P9R7PBvayNk" title="Transforming Communities" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="p-4">
+              <h3 class="font-heading font-bold text-charcoal">Transforming Communities</h3>
+              <a class="text-primary text-sm font-medium hover:underline inline-flex items-center gap-1 mt-2" href="https://youtu.be/P9R7PBvayNk" target="_blank" rel="noopener">Watch on YouTube <span class="material-icons-outlined text-sm">open_in_new</span></a>
+            </div>
+          </div>
+        </div>
+        <p class="mt-8 text-slate-600 text-sm">For more content including the Bolga East Project, visit our <a class="text-primary font-semibold hover:underline" href="https://www.facebook.com/lintelaidghana/videos/" target="_blank" rel="noopener">Facebook Videos</a>.</p>
+      </div>
+    </section>
+
+    <!-- Photos Tab -->
+    <section id="photos-section" class="py-24 bg-white hidden">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 id="photos" class="font-heading text-3xl font-bold text-charcoal mb-4">Photo Gallery</h2>
+        <p class="text-slate-600 mb-12">School outreaches, women empowerment workshops, orphanage visits, awards ceremonies, and SDG events.</p>
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+          <button class="aspect-square rounded-2xl overflow-hidden bg-grey-card hover:opacity-90 transition-opacity focus:ring-2 focus:ring-primary" onclick="openLightbox(this)">
+            <img alt="Lintel Aid Ghana outreach" class="w-full h-full object-cover" src="images/WhatsApp Image 2026-02-04 at 3.14.48 PM (4).jpeg"/>
+          </button>
+          <button class="aspect-square rounded-2xl overflow-hidden bg-grey-card hover:opacity-90 transition-opacity focus:ring-2 focus:ring-primary" onclick="openLightbox(this)">
+            <img alt="School outreach" class="w-full h-full object-cover" src="images/WhatsApp Image 2026-02-04 at 3.14.47 PM.jpeg"/>
+          </button>
+          <button class="aspect-square rounded-2xl overflow-hidden bg-grey-card hover:opacity-90 transition-opacity focus:ring-2 focus:ring-primary" onclick="openLightbox(this)">
+            <img alt="Community and banner" class="w-full h-full object-cover" src="images/WhatsApp Image 2026-02-04 at 3.02.21 PM.jpeg"/>
+          </button>
+          <button class="aspect-square rounded-2xl overflow-hidden bg-grey-card hover:opacity-90 transition-opacity focus:ring-2 focus:ring-primary" onclick="openLightbox(this)">
+            <img alt="Group with banner" class="w-full h-full object-cover" src="images/WhatsApp Image 2026-02-04 at 3.14.48 PM (8).jpeg"/>
+          </button>
+          <button class="aspect-square rounded-2xl overflow-hidden bg-grey-card hover:opacity-90 transition-opacity focus:ring-2 focus:ring-primary" onclick="openLightbox(this)">
+            <img alt="Community meeting" class="w-full h-full object-cover" src="images/WhatsApp Image 2026-02-04 at 3.14.49 PM (4).jpeg"/>
+          </button>
+          <button class="aspect-square rounded-2xl overflow-hidden bg-grey-card hover:opacity-90 transition-opacity focus:ring-2 focus:ring-primary" onclick="openLightbox(this)">
+            <img alt="Lintel Aid project" class="w-full h-full object-cover" src="images/WhatsApp Image 2026-02-04 at 3.18.25 PM.jpeg"/>
+          </button>
+          <button class="aspect-square rounded-2xl overflow-hidden bg-grey-card hover:opacity-90 transition-opacity focus:ring-2 focus:ring-primary" onclick="openLightbox(this)">
+            <img alt="Awards" class="w-full h-full object-cover" src="images/WhatsApp Image 2026-02-04 at 3.18.30 PM.jpeg"/>
+          </button>
+          <button class="aspect-square rounded-2xl overflow-hidden bg-grey-card hover:opacity-90 transition-opacity focus:ring-2 focus:ring-primary" onclick="openLightbox(this)">
+            <img alt="Project moment" class="w-full h-full object-cover" src="images/WhatsApp Image 2026-02-04 at 3.14.49 PM (8).jpeg"/>
+          </button>
+        </div>
+        <p class="mt-8 text-slate-600 text-sm">More photos from our projects are available on <a class="text-primary font-semibold hover:underline" href="https://www.facebook.com/lintelaidghana/albums/561063766052602/" target="_blank" rel="noopener">Facebook Albums</a>.</p>
+      </div>
+    </section>
+
+    <!-- Lightbox (simple) -->
+    <div id="lightbox" class="fixed inset-0 z-50 hidden items-center justify-center bg-black/80 p-4" onclick="closeLightbox()">
+      <img id="lightbox-img" alt="Enlarged" class="max-w-full max-h-full object-contain rounded-lg" src="" onclick="event.stopPropagation()"/>
+      <button class="absolute top-4 right-4 text-white hover:text-primary transition-colors" onclick="closeLightbox()" aria-label="Close">
+        <span class="material-icons-outlined text-3xl">close</span>
+      </button>
+    </div>
+  </main>
+
+  <footer class="bg-charcoal text-slate-300 pt-16 pb-8 border-t border-slate-700">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col md:flex-row justify-between items-center gap-8">
+        <div class="flex items-center gap-3">
+          <img alt="Lintel Aid Ghana Logo" class="h-10 w-10 object-contain rounded-full" src="images/image_1.png"/>
+          <span class="font-heading font-bold text-white">LINTEL AID <span class="text-primary">GHANA</span></span>
+        </div>
+        <div class="flex flex-wrap items-center gap-8">
+          <span class="flex items-center gap-2 text-slate-400"><span class="material-icons-outlined text-sm">phone</span> 0549811336</span>
+          <a class="hover:text-primary transition-colors" href="index.html">Home</a>
+          <a class="hover:text-primary transition-colors" href="about.html">About</a>
+          <a class="hover:text-primary transition-colors" href="programs.html">Programs</a>
+          <a class="hover:text-primary transition-colors" href="impact.html">Impact</a>
+          <a class="hover:text-primary transition-colors" href="media.html">Media</a>
+          <a class="hover:text-primary transition-colors" href="get-involved.html">Get Involved</a>
+          <a class="hover:text-primary transition-colors" href="donate.html">Donate</a>
+          <a class="hover:text-primary transition-colors" href="contact.html">Contact</a>
+        </div>
+      </div>
+      <div class="pt-8 mt-8 border-t border-slate-700 text-center text-sm text-slate-500">
+        <p>© 2026 Lintel Aid Ghana. All Rights Reserved. "Creating Hope, Impacting Lives"</p>
+      </div>
+    </div>
+  </footer>
+
+  <a href="donate.html" class="fixed bottom-6 right-6 z-40 lg:hidden bg-primary text-white px-6 py-4 rounded-full font-bold shadow-xl hover:bg-orange-600 transition-colors flex items-center gap-2">
+    <span class="material-icons-outlined">volunteer_activism</span> Donate
+  </a>
+
+  <script>
+    document.getElementById('mobile-menu-btn')?.addEventListener('click', function() {
+      document.getElementById('mobile-menu').classList.toggle('hidden');
+    });
+
+    document.getElementById('tab-videos').addEventListener('click', function() {
+      document.getElementById('videos-section').classList.remove('hidden');
+      document.getElementById('photos-section').classList.add('hidden');
+      document.getElementById('tab-videos').classList.add('bg-primary', 'text-white');
+      document.getElementById('tab-videos').classList.remove('bg-grey-card', 'text-charcoal');
+      document.getElementById('tab-photos').classList.remove('bg-primary', 'text-white');
+      document.getElementById('tab-photos').classList.add('bg-grey-card', 'text-charcoal');
+    });
+    document.getElementById('tab-photos').addEventListener('click', function() {
+      document.getElementById('photos-section').classList.remove('hidden');
+      document.getElementById('videos-section').classList.add('hidden');
+      document.getElementById('tab-photos').classList.add('bg-primary', 'text-white');
+      document.getElementById('tab-photos').classList.remove('bg-grey-card', 'text-charcoal');
+      document.getElementById('tab-videos').classList.remove('bg-primary', 'text-white');
+      document.getElementById('tab-videos').classList.add('bg-grey-card', 'text-charcoal');
+    });
+
+    function openLightbox(el) {
+      var img = el.querySelector('img');
+      if (img) {
+        document.getElementById('lightbox-img').src = img.src;
+        document.getElementById('lightbox-img').alt = img.alt;
+        document.getElementById('lightbox').classList.remove('hidden');
+        document.getElementById('lightbox').classList.add('flex');
+      }
+    }
+    function closeLightbox() {
+      document.getElementById('lightbox').classList.add('hidden');
+      document.getElementById('lightbox').classList.remove('flex');
+    }
+  </script>
+</body>
+</html>

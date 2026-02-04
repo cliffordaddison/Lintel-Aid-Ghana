@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>First Project 2026 – Perseverance School | Lintel Aid Ghana</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet"/>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: "#E85D04",
+            charcoal: "#1A1A1A",
+            beige: "#FAF7F2",
+            "grey-card": "#F1F5F9",
+          },
+          fontFamily: { heading: ["Poppins", "sans-serif"], body: ["Open Sans", "sans-serif"] },
+        },
+      },
+    };
+  </script>
+  <style>
+    body { font-family: 'Open Sans', sans-serif; }
+    h1, h2, h3, .font-heading { font-family: 'Poppins', sans-serif; }
+    .modal-overlay { background-color: rgba(0, 0, 0, 0.6); backdrop-filter: blur(4px); }
+  </style>
+</head>
+<body class="bg-beige min-h-screen flex items-center justify-center p-4">
+  <div class="fixed inset-0 modal-overlay flex items-center justify-center z-50 p-4">
+    <div class="bg-white w-full max-w-2xl rounded-3xl shadow-2xl overflow-hidden relative">
+      <a href="index.html" class="absolute top-4 right-4 z-20 bg-white/20 hover:bg-white/40 p-2 rounded-full transition-colors text-charcoal" aria-label="Close">
+        <span class="material-icons-outlined text-xl block">close</span>
+      </a>
+      <div class="flex flex-col md:flex-row">
+        <div class="w-full md:w-5/12 bg-primary relative overflow-hidden flex flex-col justify-center items-center p-8">
+          <div class="absolute -top-12 -left-12 w-32 h-32 bg-white/10 rounded-full"></div>
+          <div class="absolute -bottom-12 -right-12 w-48 h-48 bg-black/5 rounded-full"></div>
+          <div class="relative z-10 text-center">
+            <img alt="Lintel Aid Ghana Logo" class="w-40 h-40 object-contain mx-auto mb-6 drop-shadow-lg rounded-full" src="images/image.png"/>
+            <h3 class="font-heading text-white font-bold text-xl uppercase tracking-wider">Impact Lives</h3>
+            <p class="text-orange-100 text-sm mt-2 font-medium">First project location for 2026.</p>
+          </div>
+        </div>
+        <div class="w-full md:w-7/12 p-6 md:p-10 flex flex-col">
+          <span class="inline-block px-3 py-1 bg-orange-100 text-primary text-xs font-bold rounded-full uppercase tracking-widest mb-4">First Project 2026</span>
+          <h2 class="font-heading text-2xl md:text-3xl font-extrabold text-charcoal leading-tight">
+            Journey Back to <br/><span class="text-primary">Perseverance School 2026</span>
+          </h2>
+          <p class="text-slate-600 mt-4 leading-relaxed text-sm">
+            Perseverance School is located in Amanase, a satellite village of Aboa-Besease in the Yilo Krobo Municipality, Eastern Region – established under the mercies of an indigene who desires to get his people educated. As part of our journey back to Perseverance School we want to donate care packages to club members. <strong>Care package for girls:</strong> sanitary towels, panty liner, T-roll, tissue, bathing soap, deodorant, chocolate toffees. <strong>Care package for boys:</strong> 1 T-shirt, boxer shorts, T-roll, bathing soap, shaving stick, deodorant. <strong>General donations:</strong> clothing, educational materials, footwear, water, drinks.
+          </p>
+          <div class="mt-6 space-y-3">
+            <div class="flex items-center text-slate-700">
+              <span class="material-icons-outlined text-primary mr-3 text-xl">calendar_today</span>
+              <span class="font-semibold text-sm">April 2026</span>
+            </div>
+            <div class="flex items-center text-slate-700">
+              <span class="material-icons-outlined text-primary mr-3 text-xl">location_on</span>
+              <span class="font-semibold text-sm">Amanase, Yilo Krobo, Eastern Region</span>
+            </div>
+          </div>
+          <div class="mt-8 flex flex-col gap-3">
+            <a href="donate.html" class="w-full bg-primary hover:bg-orange-600 text-white font-bold py-4 rounded-xl shadow-lg transition-all flex items-center justify-center gap-2 group">
+              Donate Now <span class="material-icons-outlined text-sm group-hover:translate-x-1 transition-transform">arrow_forward</span>
+            </a>
+            <a href="media.html#videos-section" class="w-full bg-grey-card hover:bg-slate-200 text-charcoal font-bold py-4 rounded-xl transition-all text-center">Watch Video</a>
+          </div>
+          <div class="mt-6 pt-6 border-t border-slate-100 flex items-center justify-between">
+            <label class="flex items-center cursor-pointer group">
+              <input type="checkbox" id="dont-show" class="rounded border-slate-300 text-primary focus:ring-primary w-4 h-4"/>
+              <span class="ml-2 text-xs text-slate-500 group-hover:text-slate-700 transition-colors">Don't show this again</span>
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <p class="text-slate-500 text-sm mt-4"><a href="index.html" class="text-primary hover:underline">Back to Home</a></p>
+</body>
+</html>
